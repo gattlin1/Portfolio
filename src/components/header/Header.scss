@@ -1,0 +1,28 @@
+header {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(30, 30, 30, 0.9);
+
+  div {
+    padding: 0 5px;
+    align-self: center;
+    color: white;
+
+    &:first-child {
+      font-size: 30px;
+      padding: 0 15px;
+    }
+
+    &:not(#title):hover {
+      color: #1da1f2;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
