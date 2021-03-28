@@ -1,13 +1,21 @@
 import React from 'react';
+
+import { NavLink } from 'react-router-dom';
 import './Header.scss';
 
 function Header() {
   return (
     <header>
-      <div id='title'>Gattlin Walker</div>
-      <div>Page 1</div>
-      <div>Page 2</div>
-      <div>Resume</div>
+      <nav>
+        <NavLink to='/' id='title'>
+          Gattlin Walker
+        </NavLink>
+        <i className='fas fa-bars'></i>
+        <div id='pages'>
+          <NavLink to='/research'>Research</NavLink>
+          <NavLink to='/resume'>Resume</NavLink>
+        </div>
+      </nav>
     </header>
   );
 }
