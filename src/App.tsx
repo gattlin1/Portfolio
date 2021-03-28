@@ -1,22 +1,23 @@
 import React from 'react';
 
-import Header from './components/Header/Header';
 import About from './components/About/About';
 import { Switch, Route } from 'react-router-dom';
 
 import './App.scss';
+import Layout from './containers/Layout/Layout';
+import Research from './components/Research/Research';
+import Resume from './components/Resume/Resume';
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <main>
+      <Layout>
         <Switch>
-          <Route path='/' component={About}></Route>
-          {/* <Route path='/research' component={}></Route>
-            <Route path='/resume' component={}></Route> */}
+          <Route path='/' exact component={About}></Route>
+          <Route path='/research' component={Research}></Route>
+          <Route path='/resume' component={Resume}></Route>
         </Switch>
-      </main>
+      </Layout>
     </div>
   );
 }

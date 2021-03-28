@@ -1,0 +1,29 @@
+.sidedrawer {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #145da0;
+  z-index: 100;
+  position: fixed;
+
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pages {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  i {
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+  }
+}

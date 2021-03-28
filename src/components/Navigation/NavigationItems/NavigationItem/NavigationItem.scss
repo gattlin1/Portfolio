@@ -1,0 +1,17 @@
+.nav-item {
+  padding: 9px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 8%;
+  background: transparent;
+
+  &#title {
+    padding: 0 15px;
+    font-size: 30px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

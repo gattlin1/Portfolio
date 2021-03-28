@@ -1,0 +1,19 @@
+nav {
+  .nav-items {
+    width: 100%;
+  }
+
+  #pages {
+    a:hover,
+    a.active {
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  a {
+    color: red;
+  }
+}
