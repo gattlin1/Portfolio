@@ -10,9 +10,8 @@ export interface LinkProps {
 
 function Link({ name, url, iconClass }: LinkProps) {
   return (
-    <a className='link' href={url}>
+    <a className='link' href={url} title={name}>
       <i className={iconClass}></i>
-      <div>{name}</div>
     </a>
   );
 }

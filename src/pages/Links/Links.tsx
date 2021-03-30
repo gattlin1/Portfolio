@@ -2,6 +2,8 @@ import React from 'react';
 import Link from './Link/Link';
 import { LinkProps as ILink } from './Link/Link';
 
+import './Links.scss';
+
 function Links() {
   const links: ILink[] = [
     {
@@ -20,10 +22,16 @@ function Links() {
       iconClass: 'fas fa-at',
     },
   ];
+
   return (
-    <div>
+    <div className='links'>
       {links.map((link: ILink) => (
-        <Link name={link.name} url={link.url} iconClass={link.iconClass} />
+        <Link
+          key={link.name}
+          name={link.name}
+          url={link.url}
+          iconClass={link.iconClass}
+        />
       ))}
     </div>
   );

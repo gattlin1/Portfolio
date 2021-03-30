@@ -29,12 +29,14 @@ header {
 }
 
 @media (min-width: 500px) {
-  nav {
-    flex-direction: row;
-  }
+  header {
+    nav {
+      flex-direction: row;
+    }
 
-  i {
-    display: none;
-    visibility: hidden;
+    i {
+      display: none;
+      visibility: hidden;
+    }
   }
 }
