@@ -17,7 +17,7 @@ function Links() {
       iconClass: 'fab fa-linkedin',
     },
     {
-      name: 'Gmail',
+      name: 'Email',
       url: 'mailto:gattlin28@gmail.com',
       iconClass: 'fas fa-at',
     },
