@@ -5,7 +5,6 @@ import About from './pages/About/About';
 import Layout from './containers/Layout/Layout';
 import Research from './pages/Research/Research';
 import Resume from './pages/Resume/Resume';
-import Links from './pages/Links/Links';
 import './App.scss';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
           <Route path='/' exact component={About}></Route>
           <Route path='/research' component={Research}></Route>
           <Route path='/resume' component={Resume}></Route>
-          <Route path='/links' component={Links}></Route>
         </Switch>
       </Layout>
     </div>

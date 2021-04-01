@@ -12,31 +12,39 @@ header {
 
     i {
       font-size: 25px;
-      padding: 15px;
       color: white;
+    }
+
+    #side-drawer {
+      padding: 15px;
+    }
+
+    .nav-items {
+      flex-grow: 1;
     }
   }
 }
 
 @media (max-width: 499px) {
-  #pages {
-    display: none;
-  }
+  nav {
+    #pages,
+    .links {
+      display: none;
+    }
 
-  #title {
-    flex-grow: 1;
+    #title {
+      flex-grow: 1;
+    }
   }
 }
 
 @media (min-width: 500px) {
-  header {
-    nav {
-      flex-direction: row;
-    }
+  nav {
+    flex-direction: row;
+  }
 
-    i {
-      display: none;
-      visibility: hidden;
-    }
+  #side-drawer {
+    display: none;
+    visibility: hidden;
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Links from '../Links/Links';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 import './Header.scss';
@@ -12,7 +13,12 @@ function Header({ onOpenSideDrawer }: HeaderProps) {
     <header>
       <nav>
         <NavigationItems isSideDrawer={false} />
-        <i className='fas fa-bars' onClick={onOpenSideDrawer}></i>
+        <i
+          id='side-drawer'
+          className='fas fa-bars'
+          onClick={onOpenSideDrawer}
+        ></i>
+        <Links />
       </nav>
     </header>
   );

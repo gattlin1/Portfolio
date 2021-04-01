@@ -1,4 +1,5 @@
 import React from 'react';
+import Links from '../Links/Links';
 import NavigationItems from '../NavigationItems/NavigationItems';
 
 import './Sidedrawer.scss';
@@ -13,6 +14,7 @@ function Sidedrawer({ onCloseSidedrawer }: SidedrawerProps) {
       <div className='container'>
         <i className='fas fa-chevron-up' onClick={onCloseSidedrawer}></i>
         <NavigationItems isSideDrawer clicked={onCloseSidedrawer} />
+        <Links />
       </div>
     </div>
   );
