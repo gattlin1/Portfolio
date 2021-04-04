@@ -1,0 +1,37 @@
+.card {
+  width: 80%;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+      padding: 5px;
+      transition: all 0.3s ease;
+
+      &.open {
+        transform: rotate(90deg);
+      }
+    }
+
+    h2 {
+      flex-grow: 1;
+    }
+  }
+
+  .body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+
+    &.open {
+      max-height: 400px;
+    }
+  }
+}
