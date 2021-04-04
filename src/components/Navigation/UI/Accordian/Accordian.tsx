@@ -6,12 +6,21 @@ interface CardProps {
   title: string;
   link: string;
   authors: string[];
+  advisors?: string[];
   date: string;
-  linkName: string;
+  initialState: boolean;
 }
 
-function Card({ title, children, link, authors, date, linkName }: CardProps) {
-  const [showInfo, toggleShowInfo] = useState(false);
+function Card({
+  title,
+  children,
+  link,
+  authors,
+  advisors,
+  date,
+  initialState,
+}: CardProps) {
+  const [showInfo, toggleShowInfo] = useState(initialState);
   const onToggleInfo = () => {
     toggleShowInfo(!showInfo);
   };
@@ -29,14 +38,14 @@ function Card({ title, children, link, authors, date, linkName }: CardProps) {
       <div className='title' onClick={onToggleInfo}>
         <i className={toggleBtnClasses.join(' ')}></i>
         <h2>{title}</h2>
-        <span>{date}</span>
+        <div>{date}</div>
       </div>
       <div className={bodyClasses.join(' ')}>
         <p>
-          <strong>Authors:</strong> {authors.join(', ')}
+          <strong>Author(s):</strong> <span>{authors.join(', ')}</span>
         </p>
         {children}
-        <a href={link}>{linkName}</a>
+        <a href={link}>Full Paper</a>
       </div>
     </div>
   );
