@@ -82,17 +82,8 @@ function Research(props: any) {
 
   return (
     <div className='research'>
-      {research.map(({ title, link, authors, date, summary, initialState }) => (
-        <Accordian
-          key={title}
-          title={title}
-          link={link}
-          authors={authors}
-          date={date}
-          initialState={initialState}
-        >
-          {summary}
-        </Accordian>
+      {research.map(({ summary, ...researchEntry }) => (
+        <Accordian {...researchEntry}>{summary}</Accordian>
       ))}
     </div>
   );
