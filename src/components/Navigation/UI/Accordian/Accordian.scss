@@ -1,4 +1,4 @@
-.card {
+.accordian {
   width: 80%;
   padding: 15px;
   margin: 15px;
@@ -31,6 +31,7 @@
     transition: max-height 0.4s ease;
     line-height: 1.7;
     overflow-y: scroll;
+    padding: 0 15px;
 
     &.open {
       max-height: 400px;

@@ -34,7 +34,7 @@ function Card({
   }
 
   return (
-    <div className='card'>
+    <div className='accordian'>
       <div className='title' onClick={onToggleInfo}>
         <i className={toggleBtnClasses.join(' ')}></i>
         <h2>{title}</h2>
