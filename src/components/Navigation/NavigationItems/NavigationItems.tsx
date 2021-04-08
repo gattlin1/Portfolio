@@ -19,7 +19,7 @@ function NavigationItems({ isSideDrawer, clicked }: NavigationItemsProps) {
 
       <span id='pages'>
         <NavigationItem to='/research'>Research</NavigationItem>
-        <NavigationItem to='/resume'>Resume</NavigationItem>
+        <NavigationItem to='/cv'>CV</NavigationItem>
       </span>
     </div>
   );

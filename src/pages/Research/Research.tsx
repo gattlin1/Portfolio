@@ -1,5 +1,5 @@
 import React from 'react';
-import Accordian from '../../components/Navigation/UI/Accordian/Accordian';
+import Accordian from '../../components/UI/Accordian/Accordian';
 
 import './Research.scss';
 

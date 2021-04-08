@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import About from './pages/About/About';
 import Layout from './containers/Layout/Layout';
 import Research from './pages/Research/Research';
-import Resume from './pages/Resume/Resume';
+import CV from './pages/CV/CV';
 import './App.scss';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={About}></Route>
           <Route path='/research' component={Research}></Route>
-          <Route path='/resume' component={Resume}></Route>
+          <Route path='/cv' component={CV}></Route>
         </Switch>
       </Layout>
     </div>
