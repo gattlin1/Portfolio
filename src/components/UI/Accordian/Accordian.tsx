@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Accordian.scss';
 
-interface CardProps {
+interface AccordianProps {
   children: JSX.Element[] | JSX.Element;
   title: string;
   link: string;
@@ -11,7 +11,7 @@ interface CardProps {
   initialState: boolean;
 }
 
-function Card({
+function Accordian({
   title,
   children,
   link,
@@ -19,7 +19,7 @@ function Card({
   advisors,
   date,
   initialState,
-}: CardProps) {
+}: AccordianProps) {
   const [showInfo, toggleShowInfo] = useState(initialState);
   const onToggleInfo = () => {
     toggleShowInfo(!showInfo);
@@ -51,4 +51,4 @@ function Card({
   );
 }
 
-export default Card;
+export default Accordian;

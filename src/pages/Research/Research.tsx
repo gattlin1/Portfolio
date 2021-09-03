@@ -45,7 +45,7 @@ function Research(props: any) {
         'Gattlin Walker',
         'Patrick Ayres',
         'Eathan Hickey',
-        ' Dr. Razib Iqbal',
+        'Dr. Razib Iqbal',
         'Dr. Keiichi Yoshimatsu',
       ],
       advisors: [],
