@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Accordian from '../../components/UI/Accordian/Accordian';
 
 import './Research.scss';
 
 function Research(props: any) {
+  useEffect(() => {
+    document.title = 'Gattlin Walker | Research';
+  });
   const nasaPaperOpenedOnLoad =
     props.location.hash === '#nasaPaper' ? true : false;
 
   const research = [
     {
       title: 'CNN Approach for IR Spectral Classification',
-      link:
-        'https://docs.google.com/document/d/1DHh4JisYve_U6I8eL6jIae8krZMfAXt5lqnaHCfOOyg/edit?usp=sharing',
+      link: 'https://docs.google.com/document/d/1DHh4JisYve_U6I8eL6jIae8krZMfAXt5lqnaHCfOOyg/edit?usp=sharing',
       authors: ['Gattlin Walker', ' Dr. Razib Iqbal', 'Dr. Keiichi Yoshimatsu'],
       date: '2020',
       initialState: nasaPaperOpenedOnLoad,
@@ -39,8 +41,7 @@ function Research(props: any) {
 
     {
       title: 'Computational Approach for Annotation of IR Spectral Features',
-      link:
-        'https://drive.google.com/file/d/177gxUl-PpaZynyFUZSGcI0HiNZnR6P7b/view?usp=sharing',
+      link: 'https://drive.google.com/file/d/177gxUl-PpaZynyFUZSGcI0HiNZnR6P7b/view?usp=sharing',
       authors: [
         'Gattlin Walker',
         'Patrick Ayres',

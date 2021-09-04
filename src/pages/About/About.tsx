@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import WorkExperience from '../../components/WorkExperience/WorkExperience';
+import WorkExperienceCard from '../../components/WorkExperienceCard/WorkExperienceCard';
 
 import './About.scss';
 
 function About() {
+  useEffect(() => {
+    document.title = 'Gattlin Walker | Home';
+  });
   return (
     <div className='about'>
       <h1>Hi, I'm Gattlin</h1>
@@ -22,7 +25,7 @@ function About() {
         intern there for about two years and was hired on full time the summer
         of my graduating year in 2020.
       </p>
-      <WorkExperience />
+      <WorkExperienceCard />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../UI/Card/Card';
 import DuckCreekLogo from './DuckCreekLogo/DuckCreekLogo';
 
-const WorkExperience = () => {
+const WorkExperienceCard = () => {
   return (
     <Card title='Work Experience' media={<DuckCreekLogo />} link='/experience'>
       <p>
@@ -14,4 +14,4 @@ const WorkExperience = () => {
   );
 };
 
-export default WorkExperience;
+export default WorkExperienceCard;

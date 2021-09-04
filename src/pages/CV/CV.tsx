@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './CV.scss';
 
 function Resume() {
+  useEffect(() => {
+    document.title = 'Gattlin Walker | CV';
+  });
   return (
     <div className='cv'>
       <div className='heading'>

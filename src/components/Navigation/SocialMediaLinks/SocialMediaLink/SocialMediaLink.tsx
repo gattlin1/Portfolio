@@ -10,7 +10,13 @@ export interface LinkProps {
 
 function SocialMediaLink({ name, url, iconClass }: LinkProps) {
   return (
-    <a className='link' href={url} title={name}>
+    <a
+      className='link'
+      href={url}
+      title={name}
+      target='_blank'
+      rel='noreferrer'
+    >
       <i className={iconClass}></i>
     </a>
   );
