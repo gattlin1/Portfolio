@@ -45,7 +45,9 @@ function Accordian({
           <strong>Author(s):</strong> <span>{authors.join(', ')}</span>
         </p>
         {children}
-        <a href={link}>Full Paper</a>
+        <a href={link} target='_blank' rel='noreferrer'>
+          Full Paper
+        </a>
       </div>
     </div>
   );

@@ -1,15 +1,18 @@
 import React from 'react';
+import Button from '../UI/Button/Button';
 import Card from '../UI/Card/Card';
 import DuckCreekLogo from './DuckCreekLogo/DuckCreekLogo';
 
 const WorkExperienceCard = () => {
   return (
     <Card title='Work Experience' media={<DuckCreekLogo />} link='/experience'>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-      </p>
+      <>
+        <p>
+          Learn more about my experience in the industry and personal projects I
+          have developed.
+        </p>
+        <Button to='/experience'>Learn More...</Button>
+      </>
     </Card>
   );
 };
