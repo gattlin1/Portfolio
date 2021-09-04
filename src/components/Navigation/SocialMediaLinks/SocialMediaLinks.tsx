@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from './Link/Link';
-import { LinkProps as ILink } from './Link/Link';
+import SocialMediaLink from './SocialMediaLink/SocialMediaLink';
+import { LinkProps as ILink } from './SocialMediaLink/SocialMediaLink';
 
-import './Links.scss';
+import './SocialMediaLinks.scss';
 
-function Links() {
+function SocialMediaLinks() {
   const links: ILink[] = [
     {
       name: 'Github',
@@ -26,7 +26,7 @@ function Links() {
   return (
     <div className='links'>
       {links.map((link: ILink) => (
-        <Link
+        <SocialMediaLink
           key={link.name}
           name={link.name}
           url={link.url}
@@ -37,4 +37,4 @@ function Links() {
   );
 }
 
-export default Links;
+export default SocialMediaLinks;

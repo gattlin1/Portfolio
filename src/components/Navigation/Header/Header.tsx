@@ -1,5 +1,5 @@
 import React from 'react';
-import Links from '../Links/Links';
+import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 import './Header.scss';
@@ -18,7 +18,7 @@ function Header({ onOpenSideDrawer }: HeaderProps) {
           className='fas fa-bars'
           onClick={onOpenSideDrawer}
         ></i>
-        <Links />
+        <SocialMediaLinks />
       </nav>
     </header>
   );

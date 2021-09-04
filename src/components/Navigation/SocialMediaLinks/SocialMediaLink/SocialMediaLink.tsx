@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Link.scss';
+import './SocialMediaLink.scss';
 
 export interface LinkProps {
   name: string;
@@ -8,7 +8,7 @@ export interface LinkProps {
   iconClass: string;
 }
 
-function Link({ name, url, iconClass }: LinkProps) {
+function SocialMediaLink({ name, url, iconClass }: LinkProps) {
   return (
     <a className='link' href={url} title={name}>
       <i className={iconClass}></i>
@@ -16,4 +16,4 @@ function Link({ name, url, iconClass }: LinkProps) {
   );
 }
 
-export default Link;
+export default SocialMediaLink;
