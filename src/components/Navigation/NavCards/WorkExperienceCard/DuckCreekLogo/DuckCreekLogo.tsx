@@ -1,9 +1,9 @@
 import React from 'react';
-import './DuckCreekLogo.scss';
+import Logo from '../../Logo/Logo';
 
 const DuckCreekLogo = () => {
   return (
-    <a href='https://www.duckcreek.com/' target='_blank' rel='noreferrer'>
+    <Logo url='https://www.duckcreek.com/'>
       <svg
         id='duck-creek-logo'
         xmlns='http://www.w3.org/2000/svg'
@@ -39,7 +39,7 @@ const DuckCreekLogo = () => {
           fill='#2DD49C'
         ></polygon>
       </svg>
-    </a>
+    </Logo>
   );
 };
 

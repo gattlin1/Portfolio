@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import WorkExperienceCard from '../../components/WorkExperienceCard/WorkExperienceCard';
+import WorkExperienceCard from '../../components/Navigation/NavCards/WorkExperienceCard/WorkExperienceCard';
+import ResearchCard from '../../components/Navigation/NavCards/ResearchCard/ResearchCard';
 
 import './About.scss';
 
@@ -25,7 +26,10 @@ function About() {
         intern there for about two years and was hired on full time the summer
         of my graduating year in 2020.
       </p>
-      <WorkExperienceCard />
+      <div className='nav-cards'>
+        <WorkExperienceCard />
+        <ResearchCard />
+      </div>
     </div>
   );
 }

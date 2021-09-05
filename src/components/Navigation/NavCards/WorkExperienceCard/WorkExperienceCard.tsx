@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../UI/Button/Button';
-import Card from '../UI/Card/Card';
+import Button from '../../../UI/Button/Button';
+import Card from '../../../UI/Card/Card';
 import DuckCreekLogo from './DuckCreekLogo/DuckCreekLogo';
 
 const WorkExperienceCard = () => {
@@ -8,8 +8,7 @@ const WorkExperienceCard = () => {
     <Card title='Work Experience' media={<DuckCreekLogo />} link='/experience'>
       <>
         <p>
-          Learn more about my experience in the industry and personal projects I
-          have developed.
+          My experience in the industry and personal projects I have developed.
         </p>
         <Button to='/experience'>Learn More...</Button>
       </>

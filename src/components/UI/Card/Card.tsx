@@ -21,7 +21,6 @@ function Card({ title, children, media, link }: CardProps) {
           <h2>{title}</h2>
         )}
       </div>
-      <hr />
       {media && <div className='media'>{media}</div>}
       <div className='body'>{children}</div>
     </div>

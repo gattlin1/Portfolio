@@ -1,13 +1,11 @@
 .card {
-  width: 50%;
-  min-width: 250px;
-  max-width: 500px;
   padding: 15px;
   margin: 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 5px;
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
   .title {
     display: flex;
     flex-direction: row;
@@ -15,6 +13,8 @@
     justify-content: center;
     cursor: pointer;
     color: #145da0;
+    font-weight: 800;
+    padding-bottom: 5px;
 
     h2 {
       flex-grow: 1;
