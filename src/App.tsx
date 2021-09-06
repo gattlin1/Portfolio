@@ -6,6 +6,8 @@ import Layout from './containers/Layout/Layout';
 import Research from './pages/Research/Research';
 import CV from './pages/CV/CV';
 import WorkExperience from './pages/WorkExperience/WorkExperience';
+import Education from './pages/Education/Education';
+
 import './App.scss';
 
 function App() {
@@ -14,9 +16,10 @@ function App() {
       <Layout>
         <Switch>
           <Route path='/' exact component={About}></Route>
+          <Route path='/experience' component={WorkExperience}></Route>
+          <Route path='/education' component={Education}></Route>
           <Route path='/research' component={Research}></Route>
           <Route path='/cv' component={CV}></Route>
-          <Route path='/experience' component={WorkExperience}></Route>
         </Switch>
       </Layout>
     </div>
