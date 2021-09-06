@@ -7,12 +7,12 @@ interface LogoProps {
   children: JSX.Element | JSX.Element[];
 }
 
-const Logo = ({ url, children }: LogoProps) => {
+function Logo({ url, children }: LogoProps) {
   return (
     <a className='logo' href={url} target='_blank' rel='noreferrer'>
       {children}
     </a>
   );
-};
+}
 
 export default Logo;

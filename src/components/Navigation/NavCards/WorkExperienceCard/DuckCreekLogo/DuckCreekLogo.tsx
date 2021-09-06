@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../Logo/Logo';
 
-const DuckCreekLogo = () => {
+function DuckCreekLogo() {
   return (
     <Logo url='https://www.duckcreek.com/'>
       <svg
@@ -41,6 +41,6 @@ const DuckCreekLogo = () => {
       </svg>
     </Logo>
   );
-};
+}
 
 export default DuckCreekLogo;

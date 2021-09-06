@@ -18,12 +18,18 @@ function About() {
         from Missouri State University with a 3.97 GPA. My most memorable
         academic experience was performing research for the{' '}
         <Link to='/research#nasaPaper'>
-          NASA - National Aeronautics and Space Administration.
+          NASA Missouri Space Grant Consortium (MSOGC) Grant
         </Link>
+        . The MSOGC Grant is a research scholarship given to select Missouri
+        State University students based on faculty recommendations. Recipients
+        are responsible for conducting a research project on NASA's ECOSTRESS
+        data set. My research involved annotating spectra using statistical
+        similarity algorithms, and also classifying by extracting spectral
+        features using convolutional neural networks.
       </p>
       <p>
         Currently I am a software engineer for Duck Creek Technologies. I was an
-        intern there for about two years and was hired on full time the summer
+        intern there for almost two years and was hired on full time the summer
         of my graduating year in 2020.
       </p>
       <div className='nav-cards'>

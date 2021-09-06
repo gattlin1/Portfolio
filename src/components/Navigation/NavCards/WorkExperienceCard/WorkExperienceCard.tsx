@@ -1,19 +1,19 @@
 import React from 'react';
-import Button from '../../../UI/Button/Button';
+import CardLink from '../../../UI/Card/CardLink/CardLink';
 import Card from '../../../UI/Card/Card';
 import DuckCreekLogo from './DuckCreekLogo/DuckCreekLogo';
 
-const WorkExperienceCard = () => {
+function WorkExperienceCard() {
   return (
     <Card title='Work Experience' media={<DuckCreekLogo />} link='/experience'>
       <>
         <p>
           My experience in the industry and personal projects I have developed.
         </p>
-        <Button to='/experience'>Learn More</Button>
+        <CardLink to='/experience'>Learn More</CardLink>
       </>
     </Card>
   );
-};
+}
 
 export default WorkExperienceCard;
