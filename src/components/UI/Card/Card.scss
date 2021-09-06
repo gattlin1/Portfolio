@@ -6,6 +6,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  max-width: 250px;
+
   .title {
     display: flex;
     flex-direction: row;
@@ -29,7 +31,6 @@
   }
 
   .body {
-    line-height: 1.7;
     padding: 0 15px;
   }
 }

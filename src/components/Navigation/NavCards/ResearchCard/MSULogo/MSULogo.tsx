@@ -4,12 +4,7 @@ import Logo from '../../Logo/Logo';
 const MSULogo = () => {
   return (
     <Logo url='https://www.missouristate.edu/'>
-      <svg
-        width='56px'
-        height='40px'
-        viewBox='0 0 560 400'
-        xmlns='http://www.w3.org/2000/svg'
-      >
+      <svg viewBox='130 75 300 240' xmlns='http://www.w3.org/2000/svg'>
         <g
           fill-rule='nonzero'
           transform='matrix(12.6455 0 0 -12.6455 -1012.58 4838.19)'

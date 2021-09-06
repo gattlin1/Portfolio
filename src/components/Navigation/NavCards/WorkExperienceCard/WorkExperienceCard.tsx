@@ -10,7 +10,7 @@ const WorkExperienceCard = () => {
         <p>
           My experience in the industry and personal projects I have developed.
         </p>
-        <Button to='/experience'>Learn More...</Button>
+        <Button to='/experience'>Learn More</Button>
       </>
     </Card>
   );

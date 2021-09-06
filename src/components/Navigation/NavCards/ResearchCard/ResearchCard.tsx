@@ -10,7 +10,7 @@ const ResearchCard = () => {
         <p>
           Spectral Analysis through statistical correlation algorithms and CNNs.
         </p>
-        <Button to='/research'>Learn More...</Button>
+        <Button to='/research'>Learn More</Button>
       </>
     </Card>
   );
