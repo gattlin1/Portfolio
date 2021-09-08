@@ -5,23 +5,36 @@ import Skill from '../../../Skill/Skill';
 
 function Intern() {
   const skills = [
-    'C#',
     'SVN',
     'Git',
-    'HTML',
-    'CSS',
     'Azure DevOps',
     'Bash',
     'Team City',
     'Angular',
-    'Black Box Testing',
-    'White Box Testing',
+    'Selenium',
+    'CodedUI',
+    'Postman',
   ];
 
   return (
     <Card title='Engineering Intern' media={<DuckCreekLogo />}>
       <>
-        <p>Duck Creek Technologies</p>
+        <p>
+          <strong>Duck Creek Technologies | Jun 2018 – Apr 2020</strong>
+        </p>
+        <div className='job-description'>
+          <p>
+            Tested features for Duck Creek's Platform team and managed E2E
+            testing suite
+          </p>
+          <ul>
+            <li>- Black Box Testing</li>
+            <li>- White Box Testing</li>
+            <li>- Creating and Maintaining automated test scripts</li>
+            <li>- API Endpoint Testing</li>
+            <li></li>
+          </ul>
+        </div>
         <ul className='skill-list'>
           {skills.map((skill, idx) => (
             <Skill key={idx}>{skill}</Skill>

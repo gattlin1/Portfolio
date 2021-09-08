@@ -3,8 +3,6 @@ import DuckCreekLogo from '../../../Navigation/NavCards/WorkExperienceCard/DuckC
 import Card from '../../../UI/Card/Card';
 import Skill from '../../../Skill/Skill';
 
-import './AscSoftwareEng.scss';
-
 function AscSoftwareEng() {
   const skills = [
     'C#',
@@ -15,12 +13,29 @@ function AscSoftwareEng() {
     'Azure DevOps',
     'Bash',
     'Team City',
+    'Author',
+    'Server',
+    'Express',
   ];
 
   return (
     <Card title='Associate Software Engineer' media={<DuckCreekLogo />}>
       <>
-        <p>Duck Creek Technologies</p>
+        <p>
+          <strong>Duck Creek Technologies | May 2020 - Present</strong>
+        </p>
+        <div className='job-description'>
+          <p>
+            Lead developer for General Liability on the Commercial Lines
+            Templates team
+          </p>
+          <ul>
+            <li>- Developing monthly circulars, bugs, and tasks</li>
+            <li>- Responding to customer questions</li>
+            <li>- Apprenticing new hires and interns</li>
+            <li>- Styling webpages</li>
+          </ul>
+        </div>
         <ul className='skill-list'>
           {skills.map((skill, idx) => (
             <Skill key={idx}>{skill}</Skill>

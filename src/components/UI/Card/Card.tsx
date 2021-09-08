@@ -7,11 +7,13 @@ interface CardProps {
   children: JSX.Element[] | JSX.Element;
   media?: JSX.Element;
   link?: string;
+  className?: string;
 }
 
-function Card({ title, children, media, link }: CardProps) {
+function Card({ className, title, children, media, link }: CardProps) {
+  const cardClass = className ? 'card ' + className : 'card';
   return (
-    <div className='card'>
+    <div className={cardClass}>
       <div className='title'>
         {link ? (
           <NavLink to={link}>
