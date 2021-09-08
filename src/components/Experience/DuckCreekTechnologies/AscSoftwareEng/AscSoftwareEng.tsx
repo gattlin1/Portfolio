@@ -1,5 +1,5 @@
 import React from 'react';
-import DuckCreekLogo from '../../../Navigation/NavCards/WorkExperienceCard/DuckCreekLogo/DuckCreekLogo';
+import DuckCreekLogo from '../../../Logo/DuckCreekLogo/DuckCreekLogo';
 import Card from '../../../UI/Card/Card';
 import Skill from '../../../Skill/Skill';
 
@@ -30,10 +30,10 @@ function AscSoftwareEng() {
             Templates team
           </p>
           <ul>
-            <li>- Developing monthly circulars, bugs, and tasks</li>
-            <li>- Responding to customer questions</li>
-            <li>- Apprenticing new hires and interns</li>
-            <li>- Styling webpages</li>
+            <li>Developing monthly circulars, bugs, and tasks</li>
+            <li>Responding to customer questions</li>
+            <li>Apprenticing new hires and interns</li>
+            <li>Styling webpages</li>
           </ul>
         </div>
         <ul className='skill-list'>

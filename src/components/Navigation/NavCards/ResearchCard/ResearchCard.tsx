@@ -1,7 +1,7 @@
 import React from 'react';
 import CardLink from '../../../UI/Card/CardLink/CardLink';
 import Card from '../../../UI/Card/Card';
-import MSULogo from './MSULogo/MSULogo';
+import MSULogo from '../../../Logo/MSULogo/MSULogo';
 
 function ResearchCard() {
   return (

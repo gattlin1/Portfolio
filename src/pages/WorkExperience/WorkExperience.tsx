@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import AscSoftwareEng from '../../components/Job/DuckCreekTechnologies/AscSoftwareEng/AscSoftwareEng';
-import Intern from '../../components/Job/DuckCreekTechnologies/Intern/Intern';
+import AscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/AscSoftwareEng/AscSoftwareEng';
+import Intern from '../../components/Experience/DuckCreekTechnologies/Intern/Intern';
 
 import './WorkExperience.scss';
 

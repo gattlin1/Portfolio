@@ -1,5 +1,5 @@
 import React from 'react';
-import DuckCreekLogo from '../../../Navigation/NavCards/WorkExperienceCard/DuckCreekLogo/DuckCreekLogo';
+import DuckCreekLogo from '../../../Logo/DuckCreekLogo/DuckCreekLogo';
 import Card from '../../../UI/Card/Card';
 import Skill from '../../../Skill/Skill';
 
@@ -28,11 +28,10 @@ function Intern() {
             testing suite
           </p>
           <ul>
-            <li>- Black Box Testing</li>
-            <li>- White Box Testing</li>
-            <li>- Creating and Maintaining automated test scripts</li>
-            <li>- API Endpoint Testing</li>
-            <li></li>
+            <li>Black Box Testing</li>
+            <li>White Box Testing</li>
+            <li>Creating and Maintaining automated test scripts</li>
+            <li>API Endpoint Testing</li>
           </ul>
         </div>
         <ul className='skill-list'>

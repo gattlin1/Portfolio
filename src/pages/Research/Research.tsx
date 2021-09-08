@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import MSOGC from '../../components/Experience/School/MSOGC/MSOGC';
 import Accordian from '../../components/UI/Accordian/Accordian';
 
 import './Research.scss';
@@ -85,6 +86,7 @@ function Research(props: any) {
 
   return (
     <div className='research'>
+      <MSOGC />
       {research.map(({ summary, id, ...researchEntry }) => (
         <Accordian {...researchEntry} key={id}>
           {summary}
