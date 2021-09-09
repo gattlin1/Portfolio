@@ -2,8 +2,6 @@ import React from 'react';
 import SocialMediaLink from './SocialMediaLink/SocialMediaLink';
 import { LinkProps as ILink } from './SocialMediaLink/SocialMediaLink';
 
-import './SocialMediaLinks.scss';
-
 function SocialMediaLinks() {
   const links: ILink[] = [
     {

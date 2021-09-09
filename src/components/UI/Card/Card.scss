@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .card {
   padding: 15px;
   margin: 15px;
@@ -13,8 +15,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    color: #145da0;
+    color: $blue;
     font-weight: 800;
     padding-bottom: 5px;
 

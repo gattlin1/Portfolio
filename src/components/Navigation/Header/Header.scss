@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 header {
   top: 0;
   left: 0;
@@ -8,7 +10,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #145da0;
+    background-color: $blue;
 
     i {
       font-size: 25px;
@@ -26,7 +28,7 @@ header {
   }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 899px) {
   nav {
     #pages,
     .links {

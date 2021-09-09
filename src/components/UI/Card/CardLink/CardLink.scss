@@ -1,17 +1,19 @@
+@import '../../../../variables.scss';
+
 .card-link {
   background-color: white;
   box-sizing: border-box;
   display: inline-block;
   padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
-  border: 0.16em solid rgba(255, 255, 255, 0);
   border-radius: 2em;
-  border: 1px solid #145da0;
+  border: 1px solid $blue;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  color: $blue;
+  font-weight: 700;
   text-align: center;
   transition: all 0.2s;
 }
