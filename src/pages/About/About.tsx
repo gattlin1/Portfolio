@@ -17,7 +17,7 @@ function About() {
         Missouri. After high school I went on to get my BS in Computer Science
         from Missouri State University with a 3.97 GPA. My most memorable
         academic experience was performing research for the{' '}
-        <Link to='/research#nasaPaper'>
+        <Link to='/research#CNN Approach for IR Spectral Classification'>
           NASA Missouri Space Grant Consortium (MSOGC) Grant
         </Link>
         . The MSOGC Grant is a research scholarship given to select Missouri

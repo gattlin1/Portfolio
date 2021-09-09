@@ -1,7 +1,7 @@
 import React from 'react';
-import MSULogo from '../../../Logo/MSULogo/MSULogo';
-import Card from '../../../UI/Card/Card';
-import Skill from '../../../Skill/Skill';
+import MSULogo from '../../Logo/MSULogo/MSULogo';
+import Card from '../../UI/Card/Card';
+import Skill from '../../Skill/Skill';
 
 function MSOGC() {
   const skills = [

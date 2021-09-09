@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import MSOGC from '../../components/Experience/School/MSOGC/MSOGC';
+import MSOGC from '../../components/Experience/School/MSOGC';
 import Accordian from '../../components/UI/Accordian/Accordian';
 
 import './Research.scss';
@@ -9,7 +9,9 @@ function Research(props: any) {
     document.title = 'Gattlin Walker | Research';
   });
   const nasaPaperOpenedOnLoad =
-    props.location.hash === '#nasaPaper' ? true : false;
+    props.location.hash === '#CNN Approach for IR Spectral Classification'
+      ? true
+      : false;
 
   const research = [
     {
@@ -88,7 +90,7 @@ function Research(props: any) {
     <div className='research'>
       <MSOGC />
       {research.map(({ summary, id, ...researchEntry }) => (
-        <Accordian {...researchEntry} key={id}>
+        <Accordian id={id} {...researchEntry} key={id}>
           {summary}
         </Accordian>
       ))}

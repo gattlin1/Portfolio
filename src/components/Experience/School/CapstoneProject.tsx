@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from '../../../UI/Card/Card';
-import Skill from '../../../Skill/Skill';
-import GitHubLogo from '../../../Logo/GitHubLogo/GitHubLogo';
-import CardLink from '../../../UI/Card/CardLink/CardLink';
+import Card from '../../UI/Card/Card';
+import Skill from '../../Skill/Skill';
+import GitHubLogo from '../../Logo/GitHubLogo/GitHubLogo';
+import CardLink from '../../UI/Card/CardLink/CardLink';
 
 function CapstoneProject() {
   const skills = [

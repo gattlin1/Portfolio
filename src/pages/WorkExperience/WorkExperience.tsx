@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
-import AscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/AscSoftwareEng/AscSoftwareEng';
-import Intern from '../../components/Experience/DuckCreekTechnologies/Intern/Intern';
-import PokeDex from '../../components/Experience/PersonalProjects/PokeDex/PokeDex';
-import CapstoneProject from '../../components/Experience/School/CapstoneProject/CapstoneProject';
+import LearningReact from '../../components/Experience/Certificates/LearningReact';
+import AscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/AscSoftwareEng';
+import Intern from '../../components/Experience/DuckCreekTechnologies/Intern';
+import PokeDex from '../../components/Experience/PersonalProjects/PokeDex';
+import PortfolioSite from '../../components/Experience/PersonalProjects/PortfolioSite';
+import CapstoneProject from '../../components/Experience/School/CapstoneProject';
 
 import './WorkExperience.scss';
 
@@ -15,6 +17,8 @@ function WorkExperience() {
     <div className='experience'>
       <AscSoftwareEng />
       <CapstoneProject />
+      <PortfolioSite />
+      <LearningReact />
       <PokeDex />
       <Intern />
     </div>

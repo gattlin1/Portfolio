@@ -1,7 +1,7 @@
 import React from 'react';
-import DuckCreekLogo from '../../../Logo/DuckCreekLogo/DuckCreekLogo';
-import Card from '../../../UI/Card/Card';
-import Skill from '../../../Skill/Skill';
+import DuckCreekLogo from '../../Logo/DuckCreekLogo/DuckCreekLogo';
+import Card from '../../UI/Card/Card';
+import Skill from '../../Skill/Skill';
 
 function Intern() {
   const skills = [

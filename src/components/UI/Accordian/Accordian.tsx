@@ -10,6 +10,7 @@ interface AccordianProps {
   advisors?: string[];
   date: string;
   initialState: boolean;
+  id: string;
 }
 
 function Accordian({
@@ -21,6 +22,7 @@ function Accordian({
   advisors,
   date,
   initialState,
+  id,
 }: AccordianProps) {
   const [showInfo, toggleShowInfo] = useState(initialState);
   const onToggleInfo = () => {
@@ -36,7 +38,7 @@ function Accordian({
   }
 
   return (
-    <div key={key} className='accordian'>
+    <div id={id} key={key} className='accordian'>
       <div className='title' onClick={onToggleInfo}>
         <i className={toggleBtnClasses.join(' ')}></i>
         <h2>{title}</h2>
