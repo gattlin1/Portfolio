@@ -25,7 +25,7 @@ function App() {
         console.log(id);
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView();
+          element.scrollIntoView({ behavior: 'smooth' });
         }
       }, 0);
     }

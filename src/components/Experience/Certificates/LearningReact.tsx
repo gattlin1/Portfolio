@@ -26,7 +26,7 @@ function LearningReact() {
         <p>
           <strong>Certificate</strong>
         </p>
-        <div className='job-description'>
+        <div className='description'>
           <p>
             <a
               href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'

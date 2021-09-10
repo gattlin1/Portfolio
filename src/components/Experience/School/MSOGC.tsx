@@ -21,7 +21,7 @@ function MSOGC() {
         <p>
           <strong>Missouri State University | Oct 2019 - Mar 2020</strong>
         </p>
-        <div className='job-description'>
+        <div className='description'>
           <p>
             Conducted research on NASA's FTIR ECOSTRESS database including
             spectral annotation and classification

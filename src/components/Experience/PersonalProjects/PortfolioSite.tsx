@@ -24,7 +24,7 @@ function PortfolioSite() {
         <p>
           <strong>Personal Project</strong>
         </p>
-        <div className='job-description'>
+        <div className='description'>
           <p>My personal portfolio site that I created using React</p>
           <ul>
             <li>Utilizes robust components for reusability and ease of use</li>

@@ -20,13 +20,14 @@ function CapstoneProject() {
   return (
     <Card
       title='Microbeads Version 2'
+      id='MBv2'
       media={<GitHubLogo url='https://github.com/gattlin1/MBv2' />}
     >
       <>
         <p>
           <strong>Missouri State University | Aug 2019 - Dec 2019</strong>
         </p>
-        <div className='job-description'>
+        <div className='description'>
           <p>
             A web application that provides an automated approach to detecting
             protein beads in images and gathers color intensities to then be

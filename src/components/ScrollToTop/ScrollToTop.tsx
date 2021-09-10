@@ -28,7 +28,7 @@ const ScrollToTop = () => {
 
   return (
     <div>
-      <i className={classes.join(' ')} onClick={scrollUp}></i>)
+      <i className={classes.join(' ')} onClick={scrollUp}></i>
     </div>
   );
 };

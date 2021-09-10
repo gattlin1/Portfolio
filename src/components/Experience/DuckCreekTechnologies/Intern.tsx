@@ -22,7 +22,7 @@ function Intern() {
         <p>
           <strong>Duck Creek Technologies | Jun 2018 – Apr 2020</strong>
         </p>
-        <div className='job-description'>
+        <div className='description'>
           <p>
             Tested features for Duck Creek's Platform team and managed E2E
             testing suite

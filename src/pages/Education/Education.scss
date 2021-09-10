@@ -7,3 +7,9 @@
     height: 100px;
   }
 }
+
+@media (max-width: 600px) {
+  .school-logo-container {
+    height: 50px !important;
+  }
+}

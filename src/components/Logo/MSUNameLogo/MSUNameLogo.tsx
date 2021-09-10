@@ -4,12 +4,7 @@ import Logo from '../Logo';
 function MSUNameLogo() {
   return (
     <Logo url='https://www.missouristate.edu/'>
-      <svg
-        id='Layer_1'
-        data-name='Layer 1'
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 719.68 141.27'
-      >
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 719.68 141.27'>
         <defs>
           <clipPath id='clip-path' transform='translate(-15.16 -304.36)'>
             <rect x='15.16' y='304.37' width='719.69' height='141.27' />

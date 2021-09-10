@@ -24,7 +24,7 @@ function AscSoftwareEng() {
         <p>
           <strong>Duck Creek Technologies | May 2020 - Present</strong>
         </p>
-        <div className='job-description'>
+        <div className='description'>
           <p>
             Lead developer for General Liability on the Commercial Lines
             Templates team

@@ -26,7 +26,7 @@ function PokeDex() {
         <p>
           <strong>Personal Project</strong>
         </p>
-        <div className='job-description'>
+        <div className='description'>
           <p>
             Angular web application that utilizes the PokéAPI to fetch and then
             display Pokémon.

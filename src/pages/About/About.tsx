@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import WorkExperienceCard from '../../components/Navigation/NavCards/WorkExperienceCard/WorkExperienceCard';
-import ResearchCard from '../../components/Navigation/NavCards/ResearchCard/ResearchCard';
+import WorkExperienceCard from '../../components/Navigation/NavCards/WorkExperienceCard';
+import ResearchCard from '../../components/Navigation/NavCards/ResearchCard';
 
 import './About.scss';
+import EducationCard from '../../components/Navigation/NavCards/EducaitonCard';
 
 function About() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function About() {
       <div className='nav-cards'>
         <WorkExperienceCard />
         <ResearchCard />
+        <EducationCard />
       </div>
     </div>
   );

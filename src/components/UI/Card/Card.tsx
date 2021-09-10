@@ -5,14 +5,14 @@ interface CardProps {
   title: string;
   children: JSX.Element[] | JSX.Element;
   media?: JSX.Element;
-  link?: string;
   className?: string;
+  id?: string;
 }
 
-function Card({ className, title, children, media, link }: CardProps) {
+function Card({ className, title, children, media, id }: CardProps) {
   const cardClass = className ? 'card ' + className : 'card';
   return (
-    <div className={cardClass}>
+    <div id={id} className={cardClass}>
       <div className='title'>
         <h2>{title}</h2>
       </div>
