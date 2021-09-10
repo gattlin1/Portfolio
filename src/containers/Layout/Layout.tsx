@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../components/Navigation/Header/Header';
 import Sidedrawer from '../../components/Navigation/Sidedrawer/Sidedrawer';
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 
 import './Layout.scss';
 
@@ -25,6 +26,7 @@ function Layout(props: LayoutProps) {
         <Sidedrawer onCloseSidedrawer={handleCloseSideDrawer} />
       )}
       <main>{props.children}</main>
+      <ScrollToTop />
     </>
   );
 }
