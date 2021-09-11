@@ -1,0 +1,45 @@
+.carousel {
+  display: grid;
+  grid-template-columns: 10px minmax(200px, 500px) 10px;
+  grid-template-areas:
+    'scroll-left content scroll-right'
+    'pagination pagination pagination';
+  justify-items: center;
+
+  .scroll-left {
+    grid-area: scroll-left;
+    align-self: center;
+  }
+
+  .scroll-right {
+    grid-area: scroll-right;
+    align-self: center;
+  }
+
+  .scroll-left,
+  .scroll-right,
+  .pagination {
+    i {
+      cursor: pointer;
+      font-size: 25px;
+      margin: 5px;
+    }
+  }
+
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 500px;
+  }
+
+  .pagination {
+    grid-area: pagination;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    width: 100%;
+  }
+}
