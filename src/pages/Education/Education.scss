@@ -6,10 +6,20 @@
   .school-logo-container {
     height: 100px;
   }
+
+  .overflow-scroll {
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 500px;
+  }
 }
 
 @media (max-width: 600px) {
   .school-logo-container {
     height: 50px !important;
+  }
+
+  .courses {
+    grid-template-columns: 1fr;
   }
 }

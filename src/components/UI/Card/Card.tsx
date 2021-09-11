@@ -7,12 +7,13 @@ interface CardProps {
   media?: JSX.Element;
   className?: string;
   id?: string;
+  style?: {};
 }
 
-function Card({ className, title, children, media, id }: CardProps) {
+function Card({ className, title, children, media, id, style }: CardProps) {
   const cardClass = className ? 'card ' + className : 'card';
   return (
-    <div id={id} className={cardClass}>
+    <div id={id} className={cardClass} style={style}>
       <div className='title'>
         <h2>{title}</h2>
       </div>
