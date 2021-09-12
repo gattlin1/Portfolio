@@ -70,23 +70,25 @@ const Carousel = ({ children, breakPoints }: CarouselProps) => {
 
   return (
     <div className='carousel'>
-      <div className='scroll-left'>
-        {hasPrevPage() && (
-          <i className='fas fa-arrow-left' onClick={decrementPage}></i>
-        )}
-      </div>
-      <div className='content-wrapper'>
-        <div
-          className='content'
-          style={{ transform: `translateX(-${page * 50}%)` }}
-        >
-          {items}
+      <div className='wrapper'>
+        <div className='scroll-left'>
+          {hasPrevPage() && (
+            <i className='fas fa-arrow-left' onClick={decrementPage}></i>
+          )}
         </div>
-      </div>
-      <div className='scroll-right'>
-        {hasNextPage() && (
-          <i className='fas fa-arrow-right' onClick={incrementPage}></i>
-        )}
+        <div className='content-wrapper'>
+          <div
+            className='content'
+            style={{ transform: `translateX(-${page * 100}%)` }}
+          >
+            {items}
+          </div>
+        </div>
+        <div className='scroll-right'>
+          {hasNextPage() && (
+            <i className='fas fa-arrow-right' onClick={incrementPage}></i>
+          )}
+        </div>
       </div>
       <div className='pagination'>
         {hasPrevPage() && (

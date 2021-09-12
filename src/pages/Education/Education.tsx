@@ -93,13 +93,10 @@ function Education() {
       grade: 'A',
       description: (
         <p>
-          Introduction to parallel and distributed computing through algorithms,
-          strategies for problem decomposition, system architecture,
-          implementation strategies, and performance analysis. In this course,
-          students will have the opportunity to write parallel or distributed
-          programs and applications in several contexts such as multithreaded
-          programming, general purpose computing on a graphics processing unit,
-          and MPI programming.
+          In this course, students will have the opportunity to write parallel
+          or distributed programs and applications in several contexts such as
+          multithreaded programming, general purpose computing on a graphics
+          processing unit, and MPI programming.
         </p>
       ),
       skills: ['C', 'Multithreading', 'Multiprocessing', 'MPI'],
@@ -185,11 +182,7 @@ function Education() {
         <p>
           A study of two classes of languages: formal languages (regular,
           context-free, and computable) and their associated machines (finite
-          automata, pushdown automata, and Turing machines). Other topics
-          include programming languages, focusing on the essential features of
-          imperative, functional, object-oriented, and logic programming
-          languages, together with their design and implementation on modern
-          computers.
+          automata, pushdown automata, and Turing machines).
         </p>
       ),
       skills: ['Rust'],
@@ -201,7 +194,7 @@ function Education() {
       <div className='school-logo-container'>
         <MSUNameLogo />
       </div>
-      <Carousel itemsPerPage={1}>
+      <Carousel breakPoints={[{ width: '500px', itemsPerPage: 1 }]}>
         {courseList.map(({ title, courseCode, grade, description, skills }) => (
           <Card title={`${courseCode}: ${title}`} key={courseCode}>
             <div className='description overflow-scroll'>{description}</div>

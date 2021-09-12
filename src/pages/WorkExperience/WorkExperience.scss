@@ -1,6 +1,7 @@
 .experience {
   display: grid;
   grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 30px;
 }
 
 @media (max-width: 800px) {
