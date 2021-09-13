@@ -4,6 +4,7 @@ import MSUNameLogo from '../../components/Logo/MSUNameLogo/MSUNameLogo';
 import Skill from '../../components/Skill/Skill';
 import Card from '../../components/UI/Card/Card';
 import Carousel from '../../components/UI/Carousel/Carousel';
+import CarouselItem from '../../components/UI/Carousel/CarouselItem/CarouselItem';
 
 import './Education.scss';
 
@@ -35,8 +36,7 @@ function Education() {
         <p>
           Introduction to the basic concepts of data mining including data
           preprocessing, classification, clustering and association rules
-          mining. The focus will be on understanding the algorithms underlying
-          data mining and on the practical use of those algorithms.
+          mining.
         </p>
       ),
       skills: [
@@ -81,8 +81,7 @@ function Education() {
         <p>
           An introduction to paradigms and languages used in internet and World
           Wide Web programming. These include modern tools for client-side and
-          server-side programming and dynamic Web page generation. Advanced
-          topics, such as security and XML, will be covered as time allows.
+          server-side programming and dynamic Web page generation.
         </p>
       ),
       skills: ['JavaScript', 'HTML', 'CSS', 'Express', 'Pug'],
@@ -93,10 +92,9 @@ function Education() {
       grade: 'A',
       description: (
         <p>
-          In this course, students will have the opportunity to write parallel
-          or distributed programs and applications in several contexts such as
-          multithreaded programming, general purpose computing on a graphics
-          processing unit, and MPI programming.
+          Writing parallel or distributed programs and applications in several
+          contexts such as multithreaded programming, general purpose computing
+          on a graphics processing unit, and MPI programming.
         </p>
       ),
       skills: ['C', 'Multithreading', 'Multiprocessing', 'MPI'],
@@ -196,15 +194,17 @@ function Education() {
       </div>
       <Carousel breakPoints={[{ width: '500px', itemsPerPage: 1 }]}>
         {courseList.map(({ title, courseCode, grade, description, skills }) => (
-          <Card title={`${courseCode}: ${title}`} key={courseCode}>
-            <div className='description overflow-scroll'>{description}</div>
-            <div>Grade Received: {grade}</div>
-            <ul className='skill-list'>
-              {skills.map((skill, idx) => (
-                <Skill key={idx}>{skill}</Skill>
-              ))}
-            </ul>
-          </Card>
+          <CarouselItem>
+            <Card title={`${courseCode}: ${title}`} key={courseCode}>
+              <div className='description overflow-scroll'>{description}</div>
+              <div>Grade Received: {grade}</div>
+              <ul className='skill-list'>
+                {skills.map((skill, idx) => (
+                  <Skill key={idx}>{skill}</Skill>
+                ))}
+              </ul>
+            </Card>
+          </CarouselItem>
         ))}
       </Carousel>
     </div>
