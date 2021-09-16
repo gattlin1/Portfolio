@@ -34,16 +34,25 @@ const Carousel = ({ children, breakPoints }: CarouselProps) => {
   };
 
   useEffect(() => {
+    let newItems = 0;
     for (const { breakPointWidth, breakPointItems } of breakPoints) {
       if (width < breakPointWidth) {
-        setItemsPerPage(breakPointItems);
+        newItems = breakPointItems;
         break;
       }
     }
+
+    // If the window is larger than all the breakpoints, set to largest breakPointItems
+    if (newItems === 0) {
+      newItems = breakPoints[breakPoints.length - 1].breakPointItems;
+    }
+
+    setItemsPerPage((prevItemsPerPage) => {
+      return newItems;
+    });
   }, [width, itemsPerPage, breakPoints]);
 
   contentClasses.push('show-' + itemsPerPage);
-
   return (
     <div className='carousel'>
       <div className='scroll-left'>
