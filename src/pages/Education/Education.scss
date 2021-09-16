@@ -7,10 +7,9 @@
     height: 100px;
   }
 
-  .overflow-scroll {
-    overflow: hidden;
-    overflow-y: scroll;
-    max-height: 500px;
+  .classes {
+    margin-top: 15px;
+    display: flex;
   }
 }
 

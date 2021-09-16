@@ -4,7 +4,6 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import About from './pages/About/About';
 import Layout from './containers/Layout/Layout';
 import Research from './pages/Research/Research';
-import CV from './pages/CV/CV';
 import WorkExperience from './pages/WorkExperience/WorkExperience';
 import Education from './pages/Education/Education';
 
@@ -39,7 +38,6 @@ function App() {
           <Route path='/experience' component={WorkExperience}></Route>
           <Route path='/education' component={Education}></Route>
           <Route path='/research' component={Research}></Route>
-          <Route path='/cv' component={CV}></Route>
         </Switch>
       </Layout>
     </div>

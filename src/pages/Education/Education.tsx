@@ -192,26 +192,30 @@ function Education() {
       <div className='school-logo-container'>
         <MSUNameLogo />
       </div>
-      <Carousel
-        breakPoints={[
-          { breakPointWidth: 650, breakPointItems: 1 },
-          { breakPointWidth: 1000, breakPointItems: 2 },
-        ]}
-      >
-        {courseList.map(({ title, courseCode, grade, description, skills }) => (
-          <CarouselItem>
-            <Card title={`${courseCode}: ${title}`} key={courseCode}>
-              <div className='description overflow-scroll'>{description}</div>
-              <div>Grade Received: {grade}</div>
-              <ul className='skill-list'>
-                {skills.map((skill, idx) => (
-                  <Skill key={idx}>{skill}</Skill>
-                ))}
-              </ul>
-            </Card>
-          </CarouselItem>
-        ))}
-      </Carousel>
+      <div className='classes'>
+        <Carousel
+          breakPoints={[
+            { breakPointWidth: 650, breakPointItems: 1 },
+            { breakPointWidth: 1000, breakPointItems: 2 },
+          ]}
+        >
+          {courseList.map(
+            ({ title, courseCode, grade, description, skills }) => (
+              <CarouselItem>
+                <Card title={`${courseCode}: ${title}`} key={courseCode}>
+                  <div className='description '>{description}</div>
+                  <div>Grade Received: {grade}</div>
+                  <ul className='skill-list'>
+                    {skills.map((skill, idx) => (
+                      <Skill key={idx}>{skill}</Skill>
+                    ))}
+                  </ul>
+                </Card>
+              </CarouselItem>
+            )
+          )}
+        </Carousel>
+      </div>
     </div>
   );
 }

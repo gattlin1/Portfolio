@@ -22,7 +22,6 @@ function NavigationItems({ isSideDrawer, clicked }: NavigationItemsProps) {
         <NavigationItem to='/experience'>Experience</NavigationItem>
         <NavigationItem to='/education'>Education</NavigationItem>
         <NavigationItem to='/research'>Research</NavigationItem>
-        <NavigationItem to='/cv'>CV</NavigationItem>
       </span>
     </div>
   );
