@@ -192,7 +192,12 @@ function Education() {
       <div className='school-logo-container'>
         <MSUNameLogo />
       </div>
-      <Carousel breakPoints={[{ width: '500px', itemsPerPage: 1 }]}>
+      <Carousel
+        breakPoints={[
+          { breakPointWidth: 650, breakPointItems: 1 },
+          { breakPointWidth: 1000, breakPointItems: 2 },
+        ]}
+      >
         {courseList.map(({ title, courseCode, grade, description, skills }) => (
           <CarouselItem>
             <Card title={`${courseCode}: ${title}`} key={courseCode}>

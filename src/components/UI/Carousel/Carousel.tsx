@@ -1,61 +1,26 @@
-import React, { Children, useState } from 'react';
+import React, { Children, useEffect, useState } from 'react';
+import useWindowDimensions from '../../../hooks/useWindowDimensions';
 
 import './Carousel.scss';
 
 interface CarouselProps {
   children: JSX.Element[] | JSX.Element;
-  breakPoints: [{ width: string; itemsPerPage: number }];
+  breakPoints: { breakPointWidth: number; breakPointItems: number }[];
 }
 
 const Carousel = ({ children, breakPoints }: CarouselProps) => {
   const items = Children.toArray(children);
   const [page, setPage] = useState(0);
-  const itemsPerPage = 1;
+  const [itemsPerPage, setItemsPerPage] = useState(1);
+  const { width } = useWindowDimensions();
+  let contentClasses = ['content'];
 
   const incrementPage = () => {
-    setPage((prevPage) => {
-      let newPage = prevPage + 1;
-      const newItemStart = newPage * itemsPerPage;
-      const itemsLeft = items.length - newItemStart;
-
-      // // If there is a full page of items left
-      // if (newItemStart + itemsPerPage <= items.length) {
-      // setCurrentItems(items.slice(newItemStart, newItemStart + itemsPerPage));
-      // }
-      // If there are items left but not for a full page
-      if (itemsLeft > 0) {
-        //setCurrentItems(items.slice(newItemStart, newItemStart + itemsLeft));
-      }
-      // If there are no items left
-      else {
-        newPage = 0;
-      }
-
-      return newPage;
-    });
+    setPage(page + 1);
   };
 
   const decrementPage = () => {
-    setPage((prevPage) => {
-      let newPage = prevPage - 1;
-      const newItemStart = newPage * itemsPerPage;
-      const itemsLeft = newItemStart + itemsPerPage;
-
-      // // If there is a full page of items left
-      // if (newItemStart - itemsPerPage >= 0) {
-      // setCurrentItems(items.slice(newItemStart, newItemStart + itemsPerPage));
-      // }
-      // If there are items left but not for a full page
-      if (itemsLeft > 0) {
-        // setCurrentItems(items.slice(newItemStart, newItemStart + itemsLeft));
-      }
-      // If there are no items left
-      else {
-        newPage = prevPage;
-      }
-
-      return newPage;
-    });
+    setPage(page - 1);
   };
 
   const hasNextPage = () => {
@@ -68,6 +33,17 @@ const Carousel = ({ children, breakPoints }: CarouselProps) => {
     return page > 0;
   };
 
+  useEffect(() => {
+    for (const { breakPointWidth, breakPointItems } of breakPoints) {
+      if (width < breakPointWidth) {
+        setItemsPerPage(breakPointItems);
+        break;
+      }
+    }
+  }, [width, itemsPerPage, breakPoints]);
+
+  contentClasses.push('show-' + itemsPerPage);
+
   return (
     <div className='carousel'>
       <div className='scroll-left'>
@@ -77,8 +53,8 @@ const Carousel = ({ children, breakPoints }: CarouselProps) => {
       </div>
       <div className='content-wrapper'>
         <div
-          className='content'
-          style={{ transform: `translateX(-${page * 50}%)` }}
+          className={contentClasses.join(' ')}
+          style={{ transform: `translateX(-${(page * 100) / itemsPerPage}%)` }}
         >
           {items}
         </div>
