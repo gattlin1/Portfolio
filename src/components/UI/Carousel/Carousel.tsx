@@ -24,9 +24,7 @@ const Carousel = ({ children, breakPoints }: CarouselProps) => {
   };
 
   const hasNextPage = () => {
-    const nextPageRightBound = page * itemsPerPage + itemsPerPage;
-    const itemsLeft = items.length > nextPageRightBound;
-    return itemsLeft;
+    return items.length - itemsPerPage > page;
   };
 
   const hasPrevPage = () => {
@@ -53,6 +51,7 @@ const Carousel = ({ children, breakPoints }: CarouselProps) => {
   }, [width, itemsPerPage, breakPoints]);
 
   contentClasses.push('show-' + itemsPerPage);
+
   return (
     <div className='carousel'>
       <div className='scroll-left'>

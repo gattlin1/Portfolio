@@ -4,10 +4,8 @@ import './Accordian.scss';
 interface AccordianProps {
   children: JSX.Element[] | JSX.Element;
   title: string;
-  key: string;
   link: string;
   authors: string[];
-  advisors?: string[];
   date: string;
   initialState: boolean;
   id: string;
@@ -15,11 +13,9 @@ interface AccordianProps {
 
 function Accordian({
   title,
-  key,
   children,
   link,
   authors,
-  advisors,
   date,
   initialState,
   id,
@@ -38,7 +34,7 @@ function Accordian({
   }
 
   return (
-    <div id={id} key={key} className='accordian'>
+    <div id={id} key={id} className='accordian'>
       <div className='title' onClick={onToggleInfo}>
         <i className={toggleBtnClasses.join(' ')}></i>
         <h2>{title}</h2>

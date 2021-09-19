@@ -201,8 +201,8 @@ function Education() {
         >
           {courseList.map(
             ({ title, courseCode, grade, description, skills }) => (
-              <CarouselItem>
-                <Card title={`${courseCode}: ${title}`} key={courseCode}>
+              <CarouselItem key={courseCode}>
+                <Card title={`${courseCode}: ${title}`}>
                   <div className='description '>{description}</div>
                   <div>Grade Received: {grade}</div>
                   <ul className='skill-list'>
