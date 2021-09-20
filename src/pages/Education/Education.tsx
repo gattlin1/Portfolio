@@ -139,7 +139,7 @@ function Education() {
           techniques.
         </p>
       ),
-      skills: ['C++'],
+      skills: ['C++', 'Stack', 'Queue', 'Binary Tree', 'Linked List'],
     },
     {
       title: 'Computer Systems Fundamentals',
@@ -170,7 +170,7 @@ function Education() {
           encryption, and digital signatures.
         </p>
       ),
-      skills: [],
+      skills: ['Encryption', 'Wireshark'],
     },
     {
       title: 'Languages and Machines',
