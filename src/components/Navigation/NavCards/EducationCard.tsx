@@ -8,8 +8,8 @@ function EducationCard() {
     <Card title='Education' media={<MSULogo />}>
       <>
         <p>
-          I attented Missouri State University for a BS in Computer Science and
-          a minor in Mathematics
+          I attented Missouri State University for a BS in CS and a minor in
+          Mathematics
         </p>
         <CardLink to='/education'>Learn More</CardLink>
       </>

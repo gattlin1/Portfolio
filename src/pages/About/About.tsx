@@ -4,7 +4,7 @@ import WorkExperienceCard from '../../components/Navigation/NavCards/WorkExperie
 import ResearchCard from '../../components/Navigation/NavCards/ResearchCard';
 
 import './About.scss';
-import EducationCard from '../../components/Navigation/NavCards/EducaitonCard';
+import EducationCard from '../../components/Navigation/NavCards/EducationCard';
 import CardLink from '../../components/UI/Card/CardLink/CardLink';
 
 function About() {
@@ -41,8 +41,8 @@ function About() {
       </div>
       <div className='nav-cards'>
         <WorkExperienceCard />
-        <ResearchCard />
         <EducationCard />
+        <ResearchCard />
       </div>
     </div>
   );
