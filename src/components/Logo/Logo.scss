@@ -2,14 +2,15 @@
 
 .logo {
   svg,
+  img,
   i {
-    opacity: 50%;
-    transition: ease-in-out all 0.4s;
+    opacity: 0.5;
+    transition: ease-in all 0.4s;
     height: 100%;
     width: auto;
 
     &:hover {
-      opacity: 100%;
+      opacity: 1;
     }
 
     g {
