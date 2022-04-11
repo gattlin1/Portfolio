@@ -35,7 +35,7 @@ function About() {
         of my graduating year in 2020.
       </p>
       <div className='resume'>
-        <CardLink to='images/Gattlin Resume - 2021.pdf' isExternal>
+        <CardLink to='images/Gattlin Resume.pdf' isExternal>
           My Resume
         </CardLink>
       </div>
