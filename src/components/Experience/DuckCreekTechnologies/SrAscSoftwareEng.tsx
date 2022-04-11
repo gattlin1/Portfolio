@@ -3,7 +3,7 @@ import DuckCreekLogo from '../../Logo/DuckCreekLogo/DuckCreekLogo';
 import Card from '../../UI/Card/Card';
 import Skill from '../../Skill/Skill';
 
-function AscSoftwareEng() {
+function SrAscSoftwareEng() {
   const skills = [
     'C#',
     'SVN',
@@ -19,10 +19,10 @@ function AscSoftwareEng() {
   ];
 
   return (
-    <Card title='Associate Software Engineer' media={<DuckCreekLogo />}>
+    <Card title='Senior Associate Software Engineer' media={<DuckCreekLogo />}>
       <>
         <p>
-          <strong>Duck Creek Technologies | May 2020 - Nov 2021</strong>
+          <strong>Duck Creek Technologies | Nov 2021 - Present</strong>
         </p>
         <div className='description'>
           <p>
@@ -30,10 +30,13 @@ function AscSoftwareEng() {
             Templates team
           </p>
           <ul>
+            <li>
+              Integrating major updates to the General Liability line of
+              business
+            </li>
             <li>Developing monthly circulars, bugs, and tasks</li>
-            <li>Responding to customer questions</li>
+            <li>Developing tools for internal use</li>
             <li>Apprenticing new hires and interns</li>
-            <li>Styling webpages</li>
           </ul>
         </div>
         <ul className='skill-list'>
@@ -46,4 +49,4 @@ function AscSoftwareEng() {
   );
 }
 
-export default AscSoftwareEng;
+export default SrAscSoftwareEng;

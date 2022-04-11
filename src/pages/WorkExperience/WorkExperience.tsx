@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import LearningReact from '../../components/Experience/Certificates/LearningReact';
+import SrAscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/SrAscSoftwareEng';
 import AscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/AscSoftwareEng';
 import Intern from '../../components/Experience/DuckCreekTechnologies/Intern';
 import PokeDex from '../../components/Experience/PersonalProjects/PokeDex';
@@ -15,6 +16,7 @@ function WorkExperience() {
 
   return (
     <div className='experience'>
+      <SrAscSoftwareEng />
       <AscSoftwareEng />
       <CapstoneProject />
       <PortfolioSite />
