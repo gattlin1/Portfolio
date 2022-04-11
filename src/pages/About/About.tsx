@@ -23,7 +23,7 @@ function About() {
           NASA Missouri Space Grant Consortium (MSOGC) Grant
         </Link>
         . The MSOGC Grant is a research scholarship given to select Missouri
-        State University students based on faculty recommendations. Recipients
+        State University students based on faculty recommendation. Recipients
         are responsible for conducting a research project on NASA's ECOSTRESS
         data set. My research involved annotating spectra using statistical
         similarity algorithms, and also classifying by extracting spectral
