@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AccordianItem.scss';
 
 export interface AccordianItemProps {
   id: string;
@@ -30,7 +31,7 @@ function AccordianItem({
   }
 
   return (
-    <div id={id} key={id} className='accordian-item'>
+    <div id={id} className='accordian-item'>
       <div className='title' onClick={() => onToggleInfo()}>
         <i className={toggleBtnClasses.join(' ')}></i>
         <h2>{title}</h2>

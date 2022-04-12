@@ -1,0 +1,37 @@
+.accordian-item {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+      padding: 15px;
+      transition: all 0.3s ease;
+
+      &.open {
+        transform: rotate(90deg);
+      }
+    }
+
+    h2 {
+      flex-grow: 1;
+    }
+  }
+
+  .body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    line-height: 1.7;
+    overflow-y: scroll;
+    padding: 0 15px;
+
+    &.open {
+      max-height: 400px;
+    }
+  }
+}

@@ -12,14 +12,16 @@ interface AccordianProps {
   }[];
 }
 
-function Accordian2({ items }: AccordianProps) {
+function Accordian({ items }: AccordianProps) {
   return (
     <div className='accordian'>
-      {items.map((item) => (
-        <AccordianItem {...item}></AccordianItem>
+      {items.map(({ id, ...item }) => (
+        <div key={id}>
+          <AccordianItem id={id} {...item}></AccordianItem>
+        </div>
       ))}
     </div>
   );
 }
 
-export default Accordian2;
+export default Accordian;
