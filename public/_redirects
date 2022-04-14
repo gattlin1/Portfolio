@@ -1,5 +1,2 @@
 # Redirects from what the browser requests to what we serve
-/              /
-/education     /education
-/research      /research
-/experience    /experience
+/* /index.html 200
