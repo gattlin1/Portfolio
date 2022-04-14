@@ -14,28 +14,35 @@ function About() {
   return (
     <div className='about'>
       <h1>Hi, I'm Gattlin</h1>
-      <p>
-        I'm a software engineer. I was born in 1997 and grew up in southern
-        Missouri. After high school I went on to get my BS in Computer Science
-        from Missouri State University with a 3.93 GPA. My most memorable
-        academic experience was performing research for the{' '}
-        <Link to='/research#CNN Approach for IR Spectral Classification'>
-          NASA Missouri Space Grant Consortium (MSOGC) Grant
-        </Link>
-        . The MSOGC Grant is a research scholarship given to select Missouri
-        State University students based on faculty recommendation. Recipients
-        are responsible for conducting a research project on NASA's ECOSTRESS
-        data set. My research involved annotating spectra using statistical
-        similarity algorithms, and also classifying by extracting spectral
-        features using convolutional neural networks.
-      </p>
-      <p>
-        Currently I am a software engineer for Duck Creek Technologies. I was an
-        intern there for almost two years and was hired on full time the summer
-        of my graduating year in 2020.
-      </p>
+      <div className='info-section'>
+        <div className='info'>
+          <p>
+            I'm a software engineer. I was born in 1997 and grew up in southern
+            Missouri. After high school I went on to get my BS in Computer
+            Science from Missouri State University with a 3.93 GPA. My most
+            memorable academic experience was performing research for the{' '}
+            <Link to='/research#CNN Approach for IR Spectral Classification'>
+              NASA Missouri Space Grant Consortium (MSOGC) Grant
+            </Link>
+            . The MSOGC Grant is a research scholarship given to select Missouri
+            State University students based on faculty recommendation.
+            Recipients are responsible for conducting a research project on
+            NASA's ECOSTRESS data set. My research involved annotating spectra
+            using statistical similarity algorithms, and also classifying by
+            extracting spectral features using convolutional neural networks.
+          </p>
+          <p>
+            Currently I am a software engineer for Duck Creek Technologies. I
+            was an intern there for almost two years and was hired on full time
+            the summer of my graduating year in 2020.
+          </p>
+        </div>
+        <div className='avatar'>
+          <img src='/images/avatar.png' alt='Avatar' />
+        </div>
+      </div>
       <div className='resume'>
-        <CardLink to='images/Gattlin Resume.pdf' isExternal>
+        <CardLink to='images/resume/Gattlin Resume.pdf' isExternal>
           My Resume
         </CardLink>
       </div>

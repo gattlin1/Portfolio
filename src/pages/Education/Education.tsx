@@ -20,10 +20,10 @@ function Education() {
       grade: 'A',
       description: (
         <p>
-          Study of software engineering concepts that involve gatherint
+          Study of software engineering concepts that involve gathering
           information, software design, testing and project management. All of
-          these concepts are applied to the{' '}
-          <Link to='/experience#MBv2'>Capstone Project</Link>
+          these concepts where then applied to my{' '}
+          <Link to='/experience#MBv2'>Capstone Project MBv2</Link>
         </p>
       ),
       skills: ['Problem Solving', 'Agile', 'Kanban Boards', 'Version Control'],

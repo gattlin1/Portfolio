@@ -5,7 +5,7 @@ import './NavigationItem.scss';
 
 interface NavigationItemProps {
   to: string;
-  children: string;
+  children: string | JSX.Element;
   id?: string;
 }
 function NavigationItem({ to, children, id }: NavigationItemProps) {

@@ -20,7 +20,7 @@ function Research(props: any) {
       content: (
         <>
           <p>
-            <strong>Author(s):</strong>
+            <strong>Authors: </strong>
             <span>Gattlin Walker, Dr. Razib Iqbal, Dr. Keiichi Yoshimatsu</span>
           </p>
           <p>
@@ -42,7 +42,7 @@ function Research(props: any) {
             classification based on spectral class and probabilistic matching.
           </p>
           <a
-            href='images/CNN Approach for IR Spectral Classification.pdf'
+            href='images/research/CNN Approach for IR Spectral Classification.pdf'
             target='_blank'
             rel='noreferrer'
           >
@@ -59,7 +59,7 @@ function Research(props: any) {
       content: (
         <>
           <p>
-            <strong>Author(s):</strong>
+            <strong>Authors: </strong>
             <span>
               Gattlin Walker, Patrick Ayres, Eathan Hickey, Dr. Razib Iqbal, Dr.
               Keiichi Yoshimatsu
@@ -91,7 +91,7 @@ function Research(props: any) {
             and convolutional neural networks.
           </p>
           <a
-            href='images/Computational Approach for Annotation of IR Spectral Features.pdf'
+            href='images/research/Computational Approach for Annotation of IR Spectral Features.pdf'
             target='_blank'
             rel='noreferrer'
           >

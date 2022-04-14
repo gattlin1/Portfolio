@@ -4,7 +4,7 @@ import Logo from '../Logo';
 function DuckCreekLogo() {
   return (
     <Logo url='https://www.duckcreek.com/'>
-      <img src='/images/duckcreek.svg' alt='Duck Creek Technologies' />
+      <img src='/images/logo/duckcreek.svg' alt='Duck Creek Technologies' />
     </Logo>
   );
 }
