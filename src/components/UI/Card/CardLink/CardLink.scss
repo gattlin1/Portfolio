@@ -7,11 +7,11 @@
   padding: 0.3em 1.2em;
   margin: 5px;
   border-radius: 2em;
-  border: 1px solid $blue;
+  border: 2px solid $gray;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  color: $blue;
+  color: $gray;
   font-weight: 700;
   text-align: center;
   transition: all 0.2s;
@@ -19,6 +19,8 @@
 
 a.card-link:hover {
   transform: scale(1.07);
+  border: 2px solid black;
+  color: black;
 }
 
 @media all and (max-width: 30em) {

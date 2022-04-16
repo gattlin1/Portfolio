@@ -10,7 +10,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $blue;
+    background-color: #fff;
+    padding-top: 3rem;
 
     i {
       font-size: 25px;
@@ -20,20 +21,25 @@ header {
 
     #side-drawer {
       padding: 15px;
+      color: $gray;
     }
 
     .nav-items {
       flex-grow: 1;
 
+      .nav-item.active {
+        color: #000;
+      }
       .nav-item:hover::after,
       .nav-item.active::after {
+        color: #000;
         width: 100%;
       }
     }
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 800px) {
   nav {
     #pages,
     .links {
@@ -46,7 +52,7 @@ header {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   nav {
     flex-direction: row;
   }

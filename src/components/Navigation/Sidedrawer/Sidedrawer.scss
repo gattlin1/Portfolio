@@ -5,19 +5,20 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: $blue;
+  background-color: #fff;
+  color: $gray;
   z-index: 100;
   position: fixed;
 
   .container {
     height: 100%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .nav-items {
       flex-grow: 1;
+      width: 100%;
     }
 
     .links {
@@ -28,14 +29,26 @@
   #pages {
     display: flex;
     flex-direction: column;
-    text-align: center;
     font-size: 25px;
+    align-items: flex-start;
+    border: 1px solid $gray;
+
+    .nav-item {
+      margin: 0;
+      padding: 20px;
+      border-bottom: 1px solid $gray;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
   }
 
   i {
     font-size: 25px;
     padding: 20px;
-    color: white;
+    color: $gray;
     font-size: 35px;
     align-self: flex-end;
   }

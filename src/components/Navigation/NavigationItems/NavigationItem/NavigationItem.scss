@@ -1,9 +1,11 @@
+@import '../../../../variables.scss';
+
 .nav-item {
   position: relative;
   display: inline-block;
   margin: 5px;
   text-decoration: none;
-  color: white;
+  color: $gray;
   overflow: hidden;
   cursor: pointer;
 
@@ -12,7 +14,7 @@
     width: 0px;
     height: 2px;
     display: block;
-    background: white;
+    background: black;
     transition: 300ms;
   }
 

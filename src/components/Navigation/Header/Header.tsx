@@ -1,6 +1,5 @@
 import React from 'react';
 import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks';
-
 import NavigationItems from '../NavigationItems/NavigationItems';
 import './Header.scss';
 
