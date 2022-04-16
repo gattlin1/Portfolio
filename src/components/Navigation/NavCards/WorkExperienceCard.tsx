@@ -5,7 +5,7 @@ import DuckCreekLogo from '../../Logo/DuckCreekLogo/DuckCreekLogo';
 
 function WorkExperienceCard() {
   return (
-    <Card title='Work Experience' media={<DuckCreekLogo />}>
+    <Card title='Experience' media={<DuckCreekLogo />}>
       <>
         <p>
           My experience in the industry and personal projects I have developed.

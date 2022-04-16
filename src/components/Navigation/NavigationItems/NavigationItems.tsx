@@ -1,8 +1,6 @@
 import React from 'react';
 import NavigationItem from './NavigationItem/NavigationItem';
 
-import './NavigationItems.scss';
-
 interface NavigationItemsProps {
   isSideDrawer: boolean;
   clicked?: () => void;

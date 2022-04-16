@@ -10,7 +10,7 @@ interface NavigationItemProps {
 }
 function NavigationItem({ to, children, id }: NavigationItemProps) {
   return (
-    <NavLink id={id} className='nav-item' to={to}>
+    <NavLink id={id} exact className='nav-item' to={to}>
       {children}
     </NavLink>
   );

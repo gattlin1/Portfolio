@@ -19,9 +19,10 @@
       padding-top: 1em;
 
       img {
-        height: auto;
+        height: 100%;
         max-width: 300px;
         border-radius: 0.5rem;
+        object-fit: cover;
       }
     }
   }

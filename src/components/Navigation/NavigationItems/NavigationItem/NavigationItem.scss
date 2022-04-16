@@ -1,17 +1,28 @@
 .nav-item {
-  padding: 9px;
+  position: relative;
+  display: inline-block;
   margin: 5px;
   text-decoration: none;
   color: white;
-  border-radius: 10px;
-  background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 300ms;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 100%;
+  }
 
   &#title {
     padding: 0 15px;
-    font-size: 30px;
-  }
-
-  &:hover {
-    cursor: pointer;
+    font-size: 20px;
   }
 }
