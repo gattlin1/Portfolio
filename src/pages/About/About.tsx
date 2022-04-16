@@ -36,16 +36,17 @@ function About() {
             was an intern there for almost two years and was hired on full time
             the summer of my graduating year in 2020.
           </p>
+          <div className='resume'>
+            <CardLink to='images/resume/Gattlin Resume.pdf' isExternal>
+              My Resume
+            </CardLink>
+          </div>
         </div>
         <div className='avatar'>
           <img src='/images/avatar.png' alt='Avatar' />
         </div>
       </div>
-      <div className='resume'>
-        <CardLink to='images/resume/Gattlin Resume.pdf' isExternal>
-          My Resume
-        </CardLink>
-      </div>
+      <br></br>
       <div className='nav-cards'>
         <WorkExperienceCard />
         <EducationCard />
