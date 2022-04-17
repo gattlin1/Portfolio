@@ -10,7 +10,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #fff;
+    background-color: $white;
     padding-top: 3rem;
 
     i {
@@ -27,9 +27,11 @@ header {
     .nav-items {
       flex-grow: 1;
 
+      .nav-item:hover,
       .nav-item.active {
         color: #000;
       }
+
       .nav-item:hover::after,
       .nav-item.active::after {
         color: #000;

@@ -3,6 +3,7 @@
 .sidedrawer {
   top: 0;
   left: 0;
+  padding-top: 3rem;
   height: 100vh;
   width: 100vw;
   background-color: #fff;
@@ -46,10 +47,9 @@
   }
 
   i {
-    font-size: 25px;
-    padding: 20px;
+    padding: 15px;
     color: $gray;
-    font-size: 35px;
+    font-size: 30px;
     align-self: flex-end;
   }
 }

@@ -15,10 +15,14 @@
     display: flex;
     gap: 25px;
 
-    a {
-      text-decoration: none;
-      color: $gray;
-      font-weight: 700;
+    .info {
+      p {
+        a {
+          text-decoration: none;
+          color: $light-blue;
+          font-weight: 700;
+        }
+      }
     }
 
     .avatar {
