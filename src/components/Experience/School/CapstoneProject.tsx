@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../UI/Card/Card';
 import Skill from '../../Skill/Skill';
-import GitHubLogo from '../../Logo/GitHubLogo/GitHubLogo';
+import GitHubLogo from '../../Logo/Logos/GitHubLogo';
 import CardLink from '../../UI/Card/CardLink/CardLink';
 
 function CapstoneProject() {
@@ -27,7 +27,7 @@ function CapstoneProject() {
         <p>
           <strong>Missouri State University | Aug 2019 - Dec 2019</strong>
         </p>
-        <div className='description'>
+        <div className='description text-color-gray'>
           <p>
             A web application that provides an automated approach to detecting
             protein beads in images and gathers color intensities to then be

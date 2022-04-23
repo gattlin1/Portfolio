@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../UI/Card/Card';
 import Skill from '../../Skill/Skill';
-import GitHubLogo from '../../Logo/GitHubLogo/GitHubLogo';
+import GitHubLogo from '../../Logo/Logos/GitHubLogo';
 import CardLink from '../../UI/Card/CardLink/CardLink';
 
 function PortfolioSite() {
@@ -24,7 +24,7 @@ function PortfolioSite() {
         <p>
           <strong>Personal Project</strong>
         </p>
-        <div className='description'>
+        <div className='description text-color-gray'>
           <p>My personal portfolio site that I created using React</p>
           <ul>
             <li>Utilizes robust components for reusability and ease of use</li>

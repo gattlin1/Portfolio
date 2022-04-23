@@ -1,0 +1,12 @@
+@import '../../../variables.scss';
+
+.research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .accordian {
+    border-top: 2px solid $light-gray;
+    border-radius: 0 0 5px 5px;
+  }
+}

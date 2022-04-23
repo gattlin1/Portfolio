@@ -3,7 +3,7 @@
 .about {
   line-height: 1.7;
   margin: 0px auto;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 40px;
 
   h1 {
@@ -11,15 +11,25 @@
     margin-bottom: 0;
   }
 
+  #about-card {
+    border-radius: 5px 5px 0 0;
+
+    .title {
+      align-self: flex-start !important;
+    }
+  }
+
   .info-section {
     display: flex;
     gap: 25px;
 
     .info {
+      text-align: initial;
+
       p {
         a {
           text-decoration: none;
-          color: $light-blue;
+          color: $blue;
           font-weight: 700;
         }
       }
@@ -44,21 +54,9 @@
       margin-left: 0px;
     }
   }
-
-  .nav-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    max-width: 980px;
-    justify-items: center;
-    gap: 30px;
-  }
 }
 
-@media (max-width: 499px) {
-  .nav-cards {
-    grid-template-columns: 1fr !important;
-  }
-
+@media (max-width: 700px) {
   .resume {
     text-align: center;
   }

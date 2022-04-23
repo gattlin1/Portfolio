@@ -1,5 +1,5 @@
 import React from 'react';
-import DuckCreekLogo from '../../Logo/DuckCreekLogo/DuckCreekLogo';
+import DuckCreekLogo from '../../Logo/Logos/DuckCreekLogo';
 import Card from '../../UI/Card/Card';
 import Skill from '../../Skill/Skill';
 
@@ -22,7 +22,7 @@ function Intern() {
         <p>
           <strong>Duck Creek Technologies | Jun 2018 – Apr 2020</strong>
         </p>
-        <div className='description'>
+        <div className='description text-color-gray'>
           <p>
             Tested features for Duck Creek's Platform team and managed E2E
             testing suite

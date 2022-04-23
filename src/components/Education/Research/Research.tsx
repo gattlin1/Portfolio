@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
-import MSOGC from '../../components/Experience/School/MSOGC';
-import Accordian from '../../components/UI/Accordian/Accordian';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import MOSGC from '../../Experience/School/MOSGC';
+import Accordian from '../../UI/Accordian/Accordian';
 
 import './Research.scss';
 
-function Research(props: any) {
-  useEffect(() => {
-    document.title = 'Gattlin Walker | Research';
-  });
+function Research() {
+  const location = useLocation();
   const nasaPaperOpenedOnLoad =
-    props.location.hash === '#CNN Approach for IR Spectral Classification';
+    location.hash === '#CNN Approach for IR Spectral Classification';
 
   const research = [
     {
@@ -104,7 +103,7 @@ function Research(props: any) {
 
   return (
     <div className='research'>
-      <MSOGC />
+      <MOSGC />
       <Accordian items={research} />
     </div>
   );

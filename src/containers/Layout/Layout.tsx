@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../../components/Navigation/Header/Header';
-import Sidedrawer from '../../components/Navigation/Sidedrawer/Sidedrawer';
+import NavCards from '../../components/Navigation/NavCards/NavCards';
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 
 import './Layout.scss';
@@ -10,22 +10,14 @@ interface LayoutProps {
 }
 
 function Layout(props: LayoutProps) {
-  const [showSideDrawer, setShowSidedrawer] = useState(false);
-
-  const handleOpenSideDrawer = () => {
-    setShowSidedrawer(true);
-  };
-  const handleCloseSideDrawer = () => {
-    setShowSidedrawer(false);
-  };
-
   return (
     <>
-      <Header onOpenSideDrawer={handleOpenSideDrawer} />
-      {showSideDrawer && (
-        <Sidedrawer onCloseSidedrawer={handleCloseSideDrawer} />
-      )}
-      <main>{props.children}</main>
+      <Header />
+      <main>
+        {props.children}
+        <br />
+        <NavCards />
+      </main>
       <ScrollToTop />
     </>
   );

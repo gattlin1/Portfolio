@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import MSUNameLogo from '../../components/Logo/MSUNameLogo/MSUNameLogo';
+import Research from '../../components/Education/Research/Research';
+import MSUNameLogo from '../../components/Logo/Logos/MSUNameLogo';
 import Skill from '../../components/Skill/Skill';
 import Card from '../../components/UI/Card/Card';
 import Carousel from '../../components/UI/Carousel/Carousel';
@@ -17,7 +18,6 @@ function Education() {
     {
       title: ' Introduction to Software Engineering',
       courseCode: 'CSC 450',
-      grade: 'A',
       description: (
         <p>
           Study of software engineering concepts that involve gathering
@@ -31,7 +31,6 @@ function Education() {
     {
       title: 'Data Mining',
       courseCode: 'CSC 535',
-      grade: 'A',
       description: (
         <p>
           Introduction to the basic concepts of data mining including data
@@ -51,11 +50,10 @@ function Education() {
     {
       title: 'Special Readings',
       courseCode: 'CSC 596',
-      grade: 'A',
       description: (
         <p>
           Directed study with a faculty member. My course was applied for my{' '}
-          <Link to='/research#CNN Approach for IR Spectral Classification'>
+          <Link to='/education#CNN Approach for IR Spectral Classification'>
             MOSGC research
           </Link>{' '}
           which involved annotating FTIR spectra with CNNs and statistical
@@ -76,7 +74,6 @@ function Education() {
     {
       title: 'Internet Programming',
       courseCode: 'CSC 365',
-      grade: 'A',
       description: (
         <p>
           An introduction to paradigms and languages used in internet and World
@@ -89,7 +86,6 @@ function Education() {
     {
       title: 'Parallel Distributed Computing',
       courseCode: 'CSC 338',
-      grade: 'A',
       description: (
         <p>
           Writing parallel or distributed programs and applications in several
@@ -102,7 +98,6 @@ function Education() {
     {
       title: 'Database System Concepts',
       courseCode: 'CSC 335',
-      grade: 'A',
       description: (
         <p>
           A study of modern database systems and their underlying concepts. Core
@@ -115,7 +110,6 @@ function Education() {
     {
       title: 'Algorithms/Adv Data Structures',
       courseCode: 'CSC 325',
-      grade: 'A',
       description: (
         <p>
           A study of algorithms and advanced data structures including graphs,
@@ -129,7 +123,6 @@ function Education() {
     {
       title: 'Data Structures',
       courseCode: 'CSC 232',
-      grade: 'A',
       description: (
         <p>
           Topics will include: algorithm design; complexity analysis; abstract
@@ -144,7 +137,6 @@ function Education() {
     {
       title: 'Computer Systems Fundamentals',
       courseCode: 'CSC 344',
-      grade: 'A',
       description: (
         <p>
           An integrated introduction to computer systems fundamentals. Topics
@@ -159,7 +151,6 @@ function Education() {
     {
       title: 'Intro to Secure Computing',
       courseCode: 'CSC388',
-      grade: 'A',
       description: (
         <p>
           This course provides an introduction to the general principles of
@@ -175,7 +166,6 @@ function Education() {
     {
       title: 'Languages and Machines',
       courseCode: 'CSC 333',
-      grade: 'A',
       description: (
         <p>
           A study of two classes of languages: formal languages (regular,
@@ -189,9 +179,36 @@ function Education() {
 
   return (
     <div className='education'>
-      <div className='school-logo-container'>
-        <MSUNameLogo />
-      </div>
+      <Card title=''>
+        <div className='school-logo-container'>
+          <MSUNameLogo />
+        </div>
+        <p>
+          <strong>Aug 2016 - May 2020</strong>
+        </p>
+        <div className='text-color-gray'>
+          <p>
+            Bachelor of Science in Computer Science and Minor in Mathematics and
+            Japanese
+          </p>
+          <div className='description'>
+            <p>
+              I attended Missouri State University for a BS in Computer Science
+              upon graduating high school. Some of my favorite classes were my
+              capstone project, research grant contributions, data mining, and
+              parallel programming. The capstone and research project were
+              amazing experiences. They allowed me to get experience working in
+              a team and also put me in a leadership position to manage
+              projects. Data mining and parallel programming were areas that I
+              was very interested in because the topics covered were very
+              involved and technical. Upon graduating I received a 3.93 GPA and
+              was on the Dean's List all 4 years.
+            </p>
+          </div>
+        </div>
+      </Card>
+      <br />
+      <Research />
       <div className='classes'>
         <Carousel
           breakPoints={[
@@ -199,21 +216,18 @@ function Education() {
             { breakPointWidth: 1000, breakPointItems: 2 },
           ]}
         >
-          {courseList.map(
-            ({ title, courseCode, grade, description, skills }) => (
-              <CarouselItem key={courseCode}>
-                <Card title={`${courseCode}: ${title}`}>
-                  <div className='description '>{description}</div>
-                  <div>Grade Received: {grade}</div>
-                  <ul className='skill-list'>
-                    {skills.map((skill, idx) => (
-                      <Skill key={idx}>{skill}</Skill>
-                    ))}
-                  </ul>
-                </Card>
-              </CarouselItem>
-            )
-          )}
+          {courseList.map(({ title, courseCode, description, skills }) => (
+            <CarouselItem key={courseCode}>
+              <Card title={`${courseCode}: ${title}`}>
+                <div className='description text-color-gray'>{description}</div>
+                <ul className='skill-list'>
+                  {skills.map((skill, idx) => (
+                    <Skill key={idx}>{skill}</Skill>
+                  ))}
+                </ul>
+              </Card>
+            </CarouselItem>
+          ))}
         </Carousel>
       </div>
     </div>

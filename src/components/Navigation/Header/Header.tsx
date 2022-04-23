@@ -1,24 +1,26 @@
-import React from 'react';
-import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks';
-import NavigationItems from '../NavigationItems/NavigationItems';
+import React, { useState } from 'react';
+import NavOverlay from '../NavOverlay/NavOverlay';
+import OverlayBtn from './OverlayBtn/OverlayBtn';
+import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem';
+
 import './Header.scss';
 
-interface HeaderProps {
-  onOpenSideDrawer: () => void;
-}
+function Header() {
+  const [showOverlay, toggleOverlay] = useState(false);
 
-function Header({ onOpenSideDrawer }: HeaderProps) {
+  const handleOverlayToggle = () => {
+    toggleOverlay(!showOverlay);
+  };
+
   return (
     <header>
       <nav>
-        <NavigationItems isSideDrawer={false} />
-        <i
-          id='side-drawer'
-          className='fas fa-bars'
-          onClick={onOpenSideDrawer}
-        ></i>
-        <SocialMediaLinks />
+        <div id='home'>
+          <NavigationItem to=''>Gattlin Walker</NavigationItem>
+        </div>
+        <OverlayBtn show={showOverlay} clicked={handleOverlayToggle} />
       </nav>
+      <NavOverlay show={showOverlay} onCloseSidedrawer={handleOverlayToggle} />
     </header>
   );
 }

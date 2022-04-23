@@ -17,7 +17,7 @@ function SocialMediaLinks() {
     {
       name: 'Email',
       url: 'mailto:gattlin28@gmail.com',
-      iconClass: 'fas fa-at',
+      iconClass: 'fa-solid fa-envelope',
     },
   ];
 

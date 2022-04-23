@@ -1,0 +1,20 @@
+.nav-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .nav-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 980px;
+    justify-items: center;
+    gap: 30px;
+  }
+
+  @media (max-width: 600px) {
+    .nav-cards {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}

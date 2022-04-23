@@ -2,25 +2,18 @@ import React from 'react';
 import NavigationItem from './NavigationItem/NavigationItem';
 
 interface NavigationItemsProps {
-  isSideDrawer: boolean;
   clicked?: () => void;
 }
 
-function NavigationItems({ isSideDrawer, clicked }: NavigationItemsProps) {
+function NavigationItems({ clicked }: NavigationItemsProps) {
   return (
     <div onClick={clicked} className='nav-items'>
-      {!isSideDrawer && (
-        <NavigationItem to='/' id='title'>
-          Gattlin Walker
-        </NavigationItem>
-      )}
-
-      <span id='pages'>
-        {isSideDrawer && <NavigationItem to='/'>About</NavigationItem>}
+      <div id='pages'>
+        <NavigationItem to='/'>Home</NavigationItem>
         <NavigationItem to='/experience'>Experience</NavigationItem>
         <NavigationItem to='/education'>Education</NavigationItem>
-        <NavigationItem to='/research'>Research</NavigationItem>
-      </span>
+        <NavigationItem to='/about'>About</NavigationItem>
+      </div>
     </div>
   );
 }

@@ -19,8 +19,43 @@
     }
   }
 
-  i {
+  &.github-logo {
     font-size: 80px;
     color: $github-black;
   }
+
+  &.nihongo-logo {
+    img {
+      height: 80px;
+      width: 100%;
+    }
+  }
+
+  &.about-logo,
+  &.book-logo,
+  &.chess-logo {
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+
+    i {
+      width: 100%;
+    }
+  }
+
+  &.chess-logo {
+    color: $green;
+  }
+
+  &.book-logo {
+    color: $orange;
+  }
+
+  &.about-logo {
+    color: $blue;
+  }
+}
+
+.disabled {
+  pointer-events: none;
 }

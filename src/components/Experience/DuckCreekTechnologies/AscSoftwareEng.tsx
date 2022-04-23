@@ -1,5 +1,5 @@
 import React from 'react';
-import DuckCreekLogo from '../../Logo/DuckCreekLogo/DuckCreekLogo';
+import DuckCreekLogo from '../../Logo/Logos/DuckCreekLogo';
 import Card from '../../UI/Card/Card';
 import Skill from '../../Skill/Skill';
 
@@ -24,7 +24,7 @@ function AscSoftwareEng() {
         <p>
           <strong>Duck Creek Technologies | May 2020 - Nov 2021</strong>
         </p>
-        <div className='description'>
+        <div className='description text-color-gray'>
           <p>
             Lead developer for General Liability on the Commercial Lines
             Templates team

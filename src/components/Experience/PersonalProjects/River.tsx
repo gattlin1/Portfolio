@@ -4,23 +4,13 @@ import Skill from '../../Skill/Skill';
 import GitHubLogo from '../../Logo/Logos/GitHubLogo';
 import CardLink from '../../UI/Card/CardLink/CardLink';
 
-function PokeDex() {
-  const skills = [
-    'Angular 10',
-    'TypeScript',
-    'CI/CD',
-    'Unit Tests',
-    'Jasmine',
-    'Git',
-    'Google Fonts',
-    'Fontawesome',
-    'RxJS',
-  ];
+function River() {
+  const skills = ['Rust', 'Bitwise Operations', 'Git', 'Unit Tests'];
 
   return (
     <Card
-      title='Pokédex'
-      media={<GitHubLogo url='https://github.com/gattlin1/PokeDex' />}
+      title='River'
+      media={<GitHubLogo url='https://github.com/gattlin1/River' />}
     >
       <>
         <p>
@@ -28,20 +18,17 @@ function PokeDex() {
         </p>
         <div className='description text-color-gray'>
           <p>
-            Angular web application that utilizes the PokéAPI to fetch and then
-            display Pokémon.
+            Chess engine written in Rust. River uses a bitboard representation
+            to help with speed and efficiency.
           </p>
-          <ul>
-            <li>Utilizes RxJS observables to dynamically fetch data</li>
-            <li>Uses services and custom pipes.</li>
-          </ul>
+          <ul></ul>
         </div>
         <ul className='skill-list'>
           {skills.map((skill, idx) => (
             <Skill key={idx}>{skill}</Skill>
           ))}
         </ul>
-        <CardLink to='https://github.com/gattlin1/PokeDex' isExternal>
+        <CardLink to='https://github.com/gattlin1/River' isExternal>
           View Code
         </CardLink>
       </>
@@ -49,4 +36,4 @@ function PokeDex() {
   );
 }
 
-export default PokeDex;
+export default River;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../UI/Card/Card';
 import Skill from '../../Skill/Skill';
-import GitHubLogo from '../../Logo/GitHubLogo/GitHubLogo';
+import GitHubLogo from '../../Logo/Logos/GitHubLogo';
 import CardLink from '../../UI/Card/CardLink/CardLink';
 
 function LearningReact() {
@@ -26,7 +26,7 @@ function LearningReact() {
         <p>
           <strong>Certificate</strong>
         </p>
-        <div className='description'>
+        <div className='description text-color-gray'>
           <p>
             <a
               href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'

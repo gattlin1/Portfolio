@@ -7,7 +7,7 @@ interface GitHubLogoProps {
 
 function GitHubLogo({ url }: GitHubLogoProps) {
   return (
-    <Logo url={url}>
+    <Logo className='github-logo' url={url}>
       <i className='fab fa-github'></i>
     </Logo>
   );

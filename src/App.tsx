@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
 
 import About from './pages/About/About';
+import Home from './pages/Home/Home';
 import Layout from './containers/Layout/Layout';
-import Research from './pages/Research/Research';
 import WorkExperience from './pages/WorkExperience/WorkExperience';
 import Education from './pages/Education/Education';
 
@@ -33,10 +33,10 @@ function App() {
     <div className='App'>
       <Layout>
         <Switch>
-          <Route path='/' exact component={About}></Route>
+          <Route path='/' exact component={Home}></Route>
+          <Route path='/about' component={About}></Route>
           <Route path='/experience' component={WorkExperience}></Route>
           <Route path='/education' component={Education}></Route>
-          <Route path='/research' component={Research}></Route>
         </Switch>
       </Layout>
     </div>

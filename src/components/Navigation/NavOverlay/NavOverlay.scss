@@ -1,0 +1,42 @@
+@import '../../../variables.scss';
+
+.nav-overlay {
+  height: 0%;
+  overflow-y: scroll;
+  background-color: $white;
+  position: fixed;
+  transition: height 0.5s ease-in-out;
+  width: 100%;
+  z-index: 100;
+
+  &.show {
+    height: 100%;
+  }
+
+  #pages {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $gray;
+    transition: color 0.5s ease-in;
+
+    .nav-item {
+      border-bottom: 1px solid $gray;
+      margin: 0;
+      padding: 20px 5vw;
+      font-weight: 500;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background-color: $second-background;
+      }
+    }
+  }
+
+  .links {
+    margin-top: 10px;
+    text-align: center;
+  }
+}

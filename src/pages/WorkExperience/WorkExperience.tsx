@@ -6,7 +6,7 @@ import Intern from '../../components/Experience/DuckCreekTechnologies/Intern';
 import PokeDex from '../../components/Experience/PersonalProjects/PokeDex';
 import PortfolioSite from '../../components/Experience/PersonalProjects/PortfolioSite';
 import CapstoneProject from '../../components/Experience/School/CapstoneProject';
-
+import River from '../../components/Experience/PersonalProjects/River';
 import './WorkExperience.scss';
 
 function WorkExperience() {
@@ -16,13 +16,16 @@ function WorkExperience() {
 
   return (
     <div className='experience'>
-      <SrAscSoftwareEng />
-      <AscSoftwareEng />
-      <CapstoneProject />
-      <PortfolioSite />
-      <LearningReact />
-      <PokeDex />
-      <Intern />
+      <div className='experience-items'>
+        <SrAscSoftwareEng />
+        <AscSoftwareEng />
+        <CapstoneProject />
+        <PortfolioSite />
+        <LearningReact />
+        <River />
+        <PokeDex />
+        <Intern />
+      </div>
     </div>
   );
 }

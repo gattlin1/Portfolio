@@ -6,61 +6,17 @@ header {
 
   nav {
     height: 60px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $white;
-    padding-top: 3rem;
+    padding: 2.25rem 5vw;
 
-    i {
+    #home {
+      font-weight: 500;
       font-size: 25px;
-      color: white;
-      cursor: pointer;
-    }
-
-    #side-drawer {
-      padding: 15px;
-      color: $gray;
-    }
-
-    .nav-items {
-      flex-grow: 1;
-
-      .nav-item:hover,
-      .nav-item.active {
-        color: #000;
-      }
-
-      .nav-item:hover::after,
-      .nav-item.active::after {
-        color: #000;
-        width: 100%;
-      }
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  nav {
-    #pages,
-    .links {
-      display: none;
-    }
-
-    #title {
+      padding-right: 30px;
+      padding-bottom: 2px;
       flex-grow: 1;
     }
-  }
-}
-
-@media (min-width: 800px) {
-  nav {
-    flex-direction: row;
-  }
-
-  #side-drawer {
-    display: none;
-    visibility: hidden;
   }
 }

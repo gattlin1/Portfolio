@@ -3,13 +3,25 @@ import React from 'react';
 import './Logo.scss';
 
 interface LogoProps {
+  className?: string;
   url: string;
   children: JSX.Element | JSX.Element[];
 }
 
-function Logo({ url, children }: LogoProps) {
+function Logo({ className, url, children }: LogoProps) {
+  let classes = ['logo'];
+
+  if (className) classes = classes.concat(className);
+
+  if (url === '') classes = classes.concat('disabled');
+
   return (
-    <a className='logo' href={url} target='_blank' rel='noreferrer'>
+    <a
+      className={classes.join(' ')}
+      href={url}
+      target='_blank'
+      rel='noreferrer'
+    >
       {children}
     </a>
   );
