@@ -12,7 +12,6 @@ function Logo({ className, url, children }: LogoProps) {
   let classes = ['logo'];
 
   if (className) classes = classes.concat(className);
-
   if (url === '') classes = classes.concat('disabled');
 
   return (

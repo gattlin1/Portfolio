@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './OverlayBtn.scss';
 
 interface OverlayBtnProps {
@@ -10,15 +9,16 @@ interface OverlayBtnProps {
 function OverlayBtn({ show, clicked }: OverlayBtnProps) {
   const btnClasses = ['overlay-btn'];
 
-  document.body.style.overflowY = 'scroll';
-
   if (show) {
     btnClasses.push('show');
-    document.body.style.overflowY = 'hidden';
   }
 
   return (
-    <div className={btnClasses.join(' ')} onClick={() => clicked()}>
+    <div
+      role='button'
+      className={btnClasses.join(' ')}
+      onClick={() => clicked()}
+    >
       <div>
         <span></span>
         <span></span>

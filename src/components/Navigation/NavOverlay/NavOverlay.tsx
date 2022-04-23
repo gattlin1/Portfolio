@@ -12,8 +12,11 @@ interface SidedrawerProps {
 function NavOverlay({ show, onCloseSidedrawer }: SidedrawerProps) {
   const overlayClasses = ['nav-overlay'];
 
+  document.body.style.overflowY = 'scroll';
+
   if (show) {
     overlayClasses.push('show');
+    document.body.style.overflowY = 'hidden';
   }
 
   return (
