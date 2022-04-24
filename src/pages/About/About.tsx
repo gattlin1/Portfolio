@@ -42,7 +42,7 @@ function About() {
             </div>
           </div>
           <div className='avatar'>
-            <img src='/images/avatar.png' alt='Avatar' />
+            <img src='/images/avatar.png' alt='me in a suit' />
           </div>
         </div>
       </Card>

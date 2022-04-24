@@ -7,7 +7,12 @@ interface NavigationItemsProps {
 
 function NavigationItems({ clicked }: NavigationItemsProps) {
   return (
-    <div onClick={clicked} className='nav-items'>
+    <div
+      onClick={clicked}
+      className='nav-items'
+      role='navigation'
+      aria-label='Navigation Items'
+    >
       <div id='pages'>
         <NavigationItem to='/'>Home</NavigationItem>
         <NavigationItem to='/experience'>Experience</NavigationItem>

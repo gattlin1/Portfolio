@@ -1,7 +1,7 @@
 import React from 'react';
-import CardLink from '../../UI/Card/CardLink/CardLink';
-import Card from '../../UI/Card/Card';
-import AboutLogo from '../../Logo/Logos/AboutLogo';
+import CardLink from '../../../UI/Card/CardLink/CardLink';
+import Card from '../../../UI/Card/Card';
+import AboutLogo from '../../../Logo/Logos/AboutLogo';
 
 function AboutCard() {
   return (

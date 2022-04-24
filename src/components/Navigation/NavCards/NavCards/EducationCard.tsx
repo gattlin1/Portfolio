@@ -1,7 +1,7 @@
 import React from 'react';
-import CardLink from '../../UI/Card/CardLink/CardLink';
-import Card from '../../UI/Card/Card';
-import MSULogo from '../../Logo/Logos/MSULogo';
+import CardLink from '../../../UI/Card/CardLink/CardLink';
+import Card from '../../../UI/Card/Card';
+import MSULogo from '../../../Logo/Logos/MSULogo';
 
 function EducationCard() {
   return (

@@ -20,7 +20,7 @@ function NavOverlay({ show, onClose }: NavOverlayProps) {
   }
 
   return (
-    <div className={overlayClasses.join(' ')} aria-label='Navigation Items'>
+    <div className={overlayClasses.join(' ')} aria-label='Navigation Overlay'>
       <NavigationItems clicked={onClose} />
       <Links />
     </div>

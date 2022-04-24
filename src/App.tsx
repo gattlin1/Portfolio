@@ -30,7 +30,7 @@ function App() {
   }, [pathname, hash]);
 
   return (
-    <div className='App'>
+    <div className='App' role='application'>
       <Layout>
         <Switch>
           <Route path='/' exact component={Home}></Route>
