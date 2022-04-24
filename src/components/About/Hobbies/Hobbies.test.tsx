@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
 import Hobbies from './Hobbies';
@@ -11,17 +10,17 @@ beforeEach(() => {
   );
 });
 
-test('Default Hobby is Chess', () => {
+it('has chess as default hobby', () => {
   expect(screen.getByText('Chess')).toHaveClass('active');
 });
 
-test('Hobby is changed to Japanese on click', () => {
+it('changes hobby to Japanese when selected', () => {
   fireEvent.click(screen.getByText('Japanese'));
 
   expect(screen.getByText('Japanese')).toHaveClass('active');
 });
 
-test('Hobby is changed to Reading on click', () => {
+it('changes hobby to reading when selected', () => {
   fireEvent.click(screen.getByText('Reading'));
 
   expect(screen.getByText('Reading')).toHaveClass('active');

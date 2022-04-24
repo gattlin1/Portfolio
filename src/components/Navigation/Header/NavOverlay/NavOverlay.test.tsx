@@ -1,23 +1,22 @@
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import NavOverlay from './NavOverlay';
 
 const setupNavOverlay = (show: boolean) => {
   return (
     <BrowserRouter>
-      <NavOverlay show={show} onCloseSidedrawer={() => {}} />
+      <NavOverlay show={show} onClose={() => {}} />
     </BrowserRouter>
   );
 };
 
-test('Scroll is disabled when shown', () => {
+it('disables scroll when overlay is shown', () => {
   render(setupNavOverlay(true));
 
   expect(document.querySelector('body')).toHaveStyle('overflow-y: hidden');
 });
 
-test('Scroll is enabled when not shown', () => {
+it('enables scroll when overlay is not shown', () => {
   render(setupNavOverlay(false));
 
   expect(document.querySelector('body')).toHaveStyle('overflow-y: scroll');

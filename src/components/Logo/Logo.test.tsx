@@ -1,18 +1,17 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Logo from './Logo';
 
-test('Renders with children', () => {
+it('renders with children', () => {
   render(
     <Logo url=''>
       <i>Logo Child</i>
     </Logo>
   );
 
-  expect(screen.getByText('Logo Child')).toBeTruthy();
+  expect(screen.getByText('Logo Child')).toBeInTheDocument();
 });
 
-test('Not disabled with url', () => {
+it('is enabled with url', () => {
   render(
     <Logo url='/education'>
       <i>Logo Child</i>
@@ -22,7 +21,7 @@ test('Not disabled with url', () => {
   expect(document.querySelector('.logo')).not.toHaveClass('disabled');
 });
 
-test('Disabled with blank url', () => {
+it('is disabled with blank url', () => {
   render(
     <Logo url=''>
       <i>Logo Child</i>
@@ -32,7 +31,7 @@ test('Disabled with blank url', () => {
   expect(document.querySelector('.logo')).toHaveClass('disabled');
 });
 
-test('Has custom classes', () => {
+it('has custom classes', () => {
   const testClass = 'test';
   render(
     <Logo className={testClass} url=''>

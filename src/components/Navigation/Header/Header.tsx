@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavOverlay from '../NavOverlay/NavOverlay';
+import NavOverlay from './NavOverlay/NavOverlay';
 import OverlayBtn from './OverlayBtn/OverlayBtn';
 import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem';
 
@@ -13,14 +13,14 @@ function Header() {
   };
 
   return (
-    <header>
+    <header role='navigation' aria-label='Main'>
       <nav>
         <div id='home'>
           <NavigationItem to=''>Gattlin Walker</NavigationItem>
         </div>
         <OverlayBtn show={showOverlay} clicked={handleOverlayToggle} />
       </nav>
-      <NavOverlay show={showOverlay} onCloseSidedrawer={handleOverlayToggle} />
+      <NavOverlay show={showOverlay} onClose={handleOverlayToggle} />
     </header>
   );
 }
