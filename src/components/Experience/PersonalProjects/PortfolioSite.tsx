@@ -11,8 +11,8 @@ function PortfolioSite() {
     'React Router',
     'CSS Grid/Flexbox',
     'Unit Tests',
+    'CI/CD',
     'Git',
-    'Axios',
   ];
 
   return (

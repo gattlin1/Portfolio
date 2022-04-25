@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import LearningReact from '../../components/Experience/Certificates/LearningReact';
+import LearningReact from '../../components/Experience/Certificates/LearningReact/LearningReact';
 import SrAscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/SrAscSoftwareEng';
 import AscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/AscSoftwareEng';
 import Intern from '../../components/Experience/DuckCreekTechnologies/Intern';

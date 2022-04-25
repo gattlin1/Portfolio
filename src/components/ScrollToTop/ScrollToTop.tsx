@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import './ScrollToTop.scss';
 
-const ScrollToTop = () => {
+function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
   const classes = ['far', 'fa-arrow-alt-circle-up', 'scroll-to-top'];
 
@@ -27,10 +27,10 @@ const ScrollToTop = () => {
   }
 
   return (
-    <div id='scroll-to-top'>
+    <div id='scroll-to-top' data-testid='scroll-to-top'>
       <i className={classes.join(' ')} onClick={scrollUp}></i>
     </div>
   );
-};
+}
 
 export default ScrollToTop;

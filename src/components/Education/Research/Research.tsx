@@ -102,7 +102,7 @@ function Research() {
   ];
 
   return (
-    <div className='research'>
+    <div className='research' aria-label='Research'>
       <MOSGC />
       <Accordian items={research} />
     </div>
