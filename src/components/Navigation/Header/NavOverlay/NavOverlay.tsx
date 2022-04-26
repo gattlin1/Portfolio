@@ -16,6 +16,7 @@ function NavOverlay({ show, onClose }: NavOverlayProps) {
 
   if (show) {
     overlayClasses.push('show');
+    window.scrollTo(0, 0);
     document.body.style.overflowY = 'hidden';
   }
 

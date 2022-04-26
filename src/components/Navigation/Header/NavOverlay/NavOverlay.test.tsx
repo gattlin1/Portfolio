@@ -2,6 +2,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import NavOverlay from './NavOverlay';
 
+window.scrollTo = jest.fn();
+
 const setupNavOverlay = (show: boolean) => {
   return (
     <BrowserRouter>
