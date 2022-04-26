@@ -3,12 +3,13 @@
 .scroll-to-top {
   position: fixed;
   color: $blue;
-  bottom: 15px;
-  right: 15px;
+  bottom: 65px;
+  right: 30px;
   cursor: pointer;
   font-size: 50px;
   transition: all ease-in-out 0.4s;
   opacity: 0;
+  z-index: 100;
 }
 
 .visible {
