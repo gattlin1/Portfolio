@@ -18,10 +18,7 @@ function PokeDex() {
   ];
 
   return (
-    <Card
-      title='Pokédex'
-      media={<GitHubLogo url='https://github.com/gattlin1/PokeDex' />}
-    >
+    <Card media={<GitHubLogo url='https://github.com/gattlin1/PokeDex' />}>
       <>
         <p>
           <strong>Personal Project</strong>

@@ -19,15 +19,20 @@ function SrAscSoftwareEng() {
   ];
 
   return (
-    <Card title='Senior Associate Software Engineer' media={<DuckCreekLogo />}>
+    <Card media={<DuckCreekLogo />}>
       <>
         <p>
-          <strong>Duck Creek Technologies | Nov 2021 - Present</strong>
+          <strong>November 2021 - Present</strong>
         </p>
         <div className='description text-color-gray'>
           <p>
             Lead developer for General Liability on the Commercial Lines
-            Templates team
+            Templates team. I am responsible for all major updates to the line
+            and assist other lines when needed. Other responsibilities include
+            maintaining tools used by the team to improve productivity. One such
+            tool is a winforms application for class code that allows somebody
+            to modify, add, and delete items. A process that was originally done
+            by manually editing the xml files and prone to errors.
           </p>
           <ul>
             <li>

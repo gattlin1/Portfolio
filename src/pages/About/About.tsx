@@ -23,7 +23,10 @@ function About() {
               and have become very proficient in various areas such as web
               development, artificial intelligence, and parallel programming. My
               most memorable academic experience was performing research for the{' '}
-              <Link to='/education#CNN Approach for IR Spectral Classification'>
+              <Link
+                className='bolded-link'
+                to='/education#CNN Approach for IR Spectral Classification'
+              >
                 NASA Missouri Space Grant Consortium (MSOGC) Grant
               </Link>
               .

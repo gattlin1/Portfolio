@@ -17,15 +17,18 @@ function Intern() {
   ];
 
   return (
-    <Card title='Engineering Intern' media={<DuckCreekLogo />}>
+    <Card media={<DuckCreekLogo />}>
       <>
         <p>
-          <strong>Duck Creek Technologies | Jun 2018 – Apr 2020</strong>
+          <strong>June 2018 – April 2020</strong>
         </p>
         <div className='description text-color-gray'>
           <p>
             Tested features for Duck Creek's Platform team and managed E2E
-            testing suite
+            testing suite. Originally I was tasked with creating automated tests
+            for the entire suite of Duck Creek products using CodedUI. After
+            completing that task I was placed on the Platform team where I was a
+            QA developer.
           </p>
           <ul>
             <li>Black Box Testing</li>

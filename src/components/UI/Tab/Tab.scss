@@ -1,10 +1,9 @@
 @import '../../../variables.scss';
 
 .tab {
-  border-top: 2px solid $light-gray;
   border-radius: 0 0 5px 5px;
 
-  .body {
+  .tab-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -14,6 +13,7 @@
     .tab-list {
       display: flex;
       justify-content: space-evenly;
+      flex: 1 1 0;
 
       button {
         font-weight: 600;
@@ -21,6 +21,8 @@
         align-self: center;
         border: none;
         color: $gray;
+        background-color: inherit;
+        width: 100%;
 
         &.active,
         &:hover {
@@ -50,6 +52,10 @@
       }
     }
   }
+
+  &.border-top {
+    border-top: 2px solid $light-gray;
+  }
 }
 
 @keyframes fadeEffect {
@@ -65,7 +71,7 @@
   .tab {
     align-items: flex-start;
 
-    .body {
+    .tab-content {
       flex-direction: row;
 
       .tab-list {

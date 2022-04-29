@@ -19,15 +19,15 @@ function AscSoftwareEng() {
   ];
 
   return (
-    <Card title='Associate Software Engineer' media={<DuckCreekLogo />}>
+    <Card media={<DuckCreekLogo />}>
       <>
         <p>
-          <strong>Duck Creek Technologies | May 2020 - Nov 2021</strong>
+          <strong>May 2020 - November 2021</strong>
         </p>
         <div className='description text-color-gray'>
           <p>
             Lead developer for General Liability on the Commercial Lines
-            Templates team
+            Templates team.
           </p>
           <ul>
             <li>Developing monthly circulars, bugs, and tasks</li>

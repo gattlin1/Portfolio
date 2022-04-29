@@ -9,7 +9,6 @@ function River() {
 
   return (
     <Card
-      title='River'
       id='River'
       media={<GitHubLogo url='https://github.com/gattlin1/River' />}
     >

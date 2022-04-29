@@ -11,15 +11,13 @@ function PortfolioSite() {
     'React Router',
     'CSS Grid/Flexbox',
     'Unit Tests',
+    'React Testing Library',
     'CI/CD',
     'Git',
   ];
 
   return (
-    <Card
-      title='Portfolio Site'
-      media={<GitHubLogo url='https://github.com/gattlin1/Portfolio' />}
-    >
+    <Card media={<GitHubLogo url='https://github.com/gattlin1/Portfolio' />}>
       <>
         <p>
           <strong>Personal Project</strong>

@@ -19,7 +19,6 @@ function LearningReact() {
 
   return (
     <Card
-      title='Learning React'
       media={<GitHubLogo url='https://github.com/gattlin1/Learning-React' />}
     >
       <>
@@ -29,6 +28,7 @@ function LearningReact() {
         <div className='description text-color-gray'>
           <p>
             <a
+              className='bolded-link'
               href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'
               target='_blank'
               rel='noreferrer'

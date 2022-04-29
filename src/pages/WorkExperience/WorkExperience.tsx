@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Tab from '../../components/UI/Tab/Tab';
 import LearningReact from '../../components/Experience/Certificates/LearningReact/LearningReact';
 import SrAscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/SrAscSoftwareEng';
 import AscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/AscSoftwareEng';
@@ -14,18 +15,52 @@ function WorkExperience() {
     document.title = 'Gattlin Walker | Experience';
   }, []);
 
+  const dctExperience: {
+    [tab: string]: { title: string; description: JSX.Element | JSX.Element[] };
+  } = {
+    srAscSoftwareEng: {
+      title: 'Sr. Asc. Software Engineer',
+      description: <SrAscSoftwareEng />,
+    },
+    ascSoftwareEng: {
+      title: 'Asc. Software Engineer',
+      description: <AscSoftwareEng />,
+    },
+    intern: {
+      title: 'Engineering Intern',
+      description: <Intern />,
+    },
+  };
+
+  const projects: {
+    [tab: string]: { title: string; description: JSX.Element | JSX.Element[] };
+  } = {
+    portfolioSite: {
+      title: 'Portfolio Site',
+      description: <PortfolioSite />,
+    },
+    learningReact: {
+      title: 'Learning React',
+      description: <LearningReact />,
+    },
+    capstoneProject: {
+      title: 'Microbeads v2',
+      description: <CapstoneProject />,
+    },
+    river: {
+      title: 'River',
+      description: <River />,
+    },
+    pokeDex: {
+      title: 'Pokédex',
+      description: <PokeDex />,
+    },
+  };
+
   return (
     <div className='experience'>
-      <div className='experience-items'>
-        <SrAscSoftwareEng />
-        <AscSoftwareEng />
-        <CapstoneProject />
-        <PortfolioSite />
-        <LearningReact />
-        <River />
-        <PokeDex />
-        <Intern />
-      </div>
+      <Tab title='Duck Creek Technologies' tabs={dctExperience}></Tab>
+      <Tab title='Projects' tabs={projects} className='border-top'></Tab>
     </div>
   );
 }

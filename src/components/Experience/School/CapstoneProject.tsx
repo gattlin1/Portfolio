@@ -19,13 +19,12 @@ function CapstoneProject() {
 
   return (
     <Card
-      title='Microbeads Version 2'
       id='MBv2'
       media={<GitHubLogo url='https://github.com/gattlin1/MBv2' />}
     >
       <>
         <p>
-          <strong>Missouri State University | Aug 2019 - Dec 2019</strong>
+          <strong>Capstone Project</strong>
         </p>
         <div className='description text-color-gray'>
           <p>
