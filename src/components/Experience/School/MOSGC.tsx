@@ -27,8 +27,8 @@ function MOSGC() {
         </p>
         <div className='description text-color-gray'>
           <p>
-            The MOSGC Grant is a research scholarship given to select Missouri
-            State University students based on faculty recommendation. During my
+            MOSGC is a research scholarship given to select Missouri State
+            University students based on faculty recommendation. During my
             senior year when I was in my capstone project, my professor
             approached me and encouraged me to apply for it with his and two
             other professor recommendations. After applying and receiving the

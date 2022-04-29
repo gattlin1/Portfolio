@@ -25,10 +25,11 @@ function PortfolioSite() {
           <strong>Personal Project</strong>
         </p>
         <div className='description text-color-gray'>
-          <p>My personal portfolio site that I created using React</p>
+          <p>My personal portfolio site that I created using React.</p>
           <ul>
             <li>Utilizes robust components for reusability and ease of use</li>
             <li>Custom CSS styling and design</li>
+            <li>Unit Testing for maintainability</li>
           </ul>
         </div>
         <ul className='skill-list'>

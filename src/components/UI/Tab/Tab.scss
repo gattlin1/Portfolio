@@ -1,6 +1,6 @@
 @import '../../../variables.scss';
 
-#hobbies {
+.tab {
   border-top: 2px solid $light-gray;
   border-radius: 0 0 5px 5px;
 
@@ -11,14 +11,16 @@
     min-height: 150px;
     width: 100%;
 
-    .hobbies {
+    .tab-list {
       display: flex;
       justify-content: space-evenly;
 
-      .hobby {
+      button {
         font-weight: 600;
         cursor: pointer;
         align-self: center;
+        border: none;
+        color: $gray;
 
         &.active,
         &:hover {
@@ -27,17 +29,9 @@
       }
     }
 
-    .info {
+    .tab-panel-container {
       width: 100%;
       text-align: initial;
-
-      p {
-        a {
-          text-decoration: none;
-          color: $blue;
-          font-weight: 700;
-        }
-      }
 
       .nihongo-logo {
         img {
@@ -45,7 +39,7 @@
         }
       }
 
-      div {
+      .tab-panel {
         display: none;
         animation: fadeEffect 1s;
         width: 100%;
@@ -68,13 +62,13 @@
 }
 
 @media (min-width: 800px) {
-  #hobbies {
+  .tab {
     align-items: flex-start;
 
     .body {
       flex-direction: row;
 
-      .hobbies {
+      .tab-list {
         flex-direction: column;
         padding: 10px;
       }

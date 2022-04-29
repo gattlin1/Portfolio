@@ -2,11 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Research from '../../components/Education/Research/Research';
 import MSUNameLogo from '../../components/Logo/Logos/MSUNameLogo';
-import Skill from '../../components/Skill/Skill';
+import AccordianItem from '../../components/UI/Accordian/AccordianItem/AccordianItem';
 import Card from '../../components/UI/Card/Card';
-import Carousel from '../../components/UI/Carousel/Carousel';
-import CarouselItem from '../../components/UI/Carousel/CarouselItem/CarouselItem';
-
 import './Education.scss';
 
 function Education() {
@@ -26,7 +23,6 @@ function Education() {
           <Link to='/experience#MBv2'>Capstone Project MBv2</Link>
         </p>
       ),
-      skills: ['Problem Solving', 'Agile', 'Kanban Boards', 'Version Control'],
     },
     {
       title: 'Data Mining',
@@ -38,14 +34,6 @@ function Education() {
           mining.
         </p>
       ),
-      skills: [
-        'Data Preprocessing',
-        'Clustering',
-        'Python',
-        'NumPy',
-        'Scikit-Learn',
-        'Neural Networks',
-      ],
     },
     {
       title: 'Special Readings',
@@ -60,16 +48,6 @@ function Education() {
           similarity algorithms.
         </p>
       ),
-      skills: [
-        'Python',
-        'Tensorflow',
-        'Keras',
-        'TensorBoard',
-        'NumPy',
-        'Parallel Programming',
-        'Git',
-        'Bash',
-      ],
     },
     {
       title: 'Internet Programming',
@@ -81,7 +59,6 @@ function Education() {
           server-side programming and dynamic Web page generation.
         </p>
       ),
-      skills: ['JavaScript', 'HTML', 'CSS', 'Express', 'Pug'],
     },
     {
       title: 'Parallel Distributed Computing',
@@ -93,7 +70,6 @@ function Education() {
           on a graphics processing unit, and MPI programming.
         </p>
       ),
-      skills: ['C', 'Multithreading', 'Multiprocessing', 'MPI'],
     },
     {
       title: 'Database System Concepts',
@@ -105,7 +81,6 @@ function Education() {
           query processing, file structures, transactions, and concurrency.
         </p>
       ),
-      skills: ['Oracle', 'SQL'],
     },
     {
       title: 'Algorithms/Adv Data Structures',
@@ -118,7 +93,6 @@ function Education() {
           problems.
         </p>
       ),
-      skills: ['Python', 'Big O Notation'],
     },
     {
       title: 'Data Structures',
@@ -132,7 +106,6 @@ function Education() {
           techniques.
         </p>
       ),
-      skills: ['C++', 'Stack', 'Queue', 'Binary Tree', 'Linked List'],
     },
     {
       title: 'Computer Systems Fundamentals',
@@ -146,22 +119,19 @@ function Education() {
           techniques.
         </p>
       ),
-      skills: ['Assembly Code'],
     },
     {
       title: 'Intro to Secure Computing',
       courseCode: 'CSC388',
       description: (
         <p>
-          This course provides an introduction to the general principles of
-          secure computing and computer security. Students will learn about
-          common threat types and cyber attacks including malware,
-          denial-of-service, spoofing, and phishing as well as fundamental
-          building blocks of secure computing systems such as authentication,
-          encryption, and digital signatures.
+          Introduction to the general principles of secure computing and
+          computer security. Learned about common threat types and cyber attacks
+          including malware, denial-of-service, spoofing, and phishing as well
+          as fundamental building blocks of secure computing systems such as
+          authentication, encryption, and digital signatures.
         </p>
       ),
-      skills: ['Encryption', 'Wireshark'],
     },
     {
       title: 'Languages and Machines',
@@ -173,7 +143,6 @@ function Education() {
           automata, pushdown automata, and Turing machines).
         </p>
       ),
-      skills: ['Rust'],
     },
   ];
 
@@ -204,32 +173,22 @@ function Education() {
               involved and technical. Upon graduating I received a 3.93 GPA and
               was on the Dean's List all 4 years.
             </p>
+            <div className='classes'>
+              {courseList.map(({ title, courseCode, description }) => (
+                <AccordianItem
+                  title={title}
+                  id={courseCode}
+                  date=''
+                  content={description}
+                  initialState={false}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </Card>
       <br />
       <Research />
-      <div className='classes'>
-        <Carousel
-          breakPoints={[
-            { breakPointWidth: 650, breakPointItems: 1 },
-            { breakPointWidth: 1000, breakPointItems: 2 },
-          ]}
-        >
-          {courseList.map(({ title, courseCode, description, skills }) => (
-            <CarouselItem key={courseCode}>
-              <Card title={`${courseCode}: ${title}`}>
-                <div className='description text-color-gray'>{description}</div>
-                <ul className='skill-list'>
-                  {skills.map((skill, idx) => (
-                    <Skill key={idx}>{skill}</Skill>
-                  ))}
-                </ul>
-              </Card>
-            </CarouselItem>
-          ))}
-        </Carousel>
-      </div>
     </div>
   );
 }
