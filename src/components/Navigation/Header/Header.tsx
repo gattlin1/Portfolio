@@ -15,7 +15,7 @@ function Header() {
   return (
     <header role='navigation' aria-label='Main'>
       <nav>
-        <div id='home'>
+        <div id='home' onClick={() => handleOverlayToggle()}>
           <NavigationItem to=''>Gattlin Walker</NavigationItem>
         </div>
         <OverlayBtn show={showOverlay} clicked={handleOverlayToggle} />

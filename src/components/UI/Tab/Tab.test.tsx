@@ -5,7 +5,10 @@ import Tab from './Tab';
 beforeEach(() => {
   const tab = {
     title: 'Tab',
-    tabs: { tab1: <p>Description Tab 1</p>, tab2: <p>Description Tab 2</p> },
+    tabs: {
+      tab1: { title: 'tab1', description: <p>Description Tab 1</p> },
+      tab2: { title: 'tab2', description: <p>Description Tab 2</p> },
+    },
   };
 
   render(
