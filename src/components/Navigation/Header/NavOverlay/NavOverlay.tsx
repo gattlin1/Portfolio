@@ -3,6 +3,7 @@ import Links from '../../SocialMediaLinks/SocialMediaLinks';
 import NavigationItems from '../../NavigationItems/NavigationItems';
 
 import './NavOverlay.scss';
+import CardLink from '../../../UI/Card/CardLink/CardLink';
 
 interface NavOverlayProps {
   show: boolean;
@@ -24,6 +25,11 @@ function NavOverlay({ show, onClose }: NavOverlayProps) {
     <div className={overlayClasses.join(' ')} aria-label='Navigation Overlay'>
       <NavigationItems clicked={onClose} />
       <Links />
+      <div className='resume'>
+        <CardLink to='images/resume/Gattlin Resume.pdf' isExternal>
+          My Resume
+        </CardLink>
+      </div>
     </div>
   );
 }

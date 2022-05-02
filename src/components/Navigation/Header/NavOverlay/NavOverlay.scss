@@ -35,8 +35,18 @@
     }
   }
 
+  .resume,
   .links {
     margin-top: 10px;
     text-align: center;
+  }
+
+  .resume {
+    text-align: center;
+
+    .card-link:hover {
+      border-color: $gray;
+      color: $gray;
+    }
   }
 }
