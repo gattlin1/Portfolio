@@ -4,6 +4,7 @@ import ChessLogo from '../../Logo/Logos/ChessLogo';
 import NihongoLogo from '../../Logo/Logos/NihongoLogo';
 import BookLogo from '../../Logo/Logos/BookLogo';
 import Tab from '../../UI/Tab/Tab';
+import GitHubLogo from '../../Logo/Logos/GitHubLogo';
 
 function Hobbies() {
   const hobbies = {
@@ -50,6 +51,29 @@ function Hobbies() {
         </>
       ),
     },
+    sideProjects: {
+      title: 'Side Projects',
+      description: (
+        <>
+          <GitHubLogo url='https://github.com/gattlin1' />
+          <p>
+            During the evening I try to work on side projects. The types of side
+            projects vary, but I often try to build something I am interested in
+            or want to learn more about. An example of this would be rebuilding
+            a{' '}
+            <a
+              className='bolded-link'
+              href='https://github.com/gattlin1/Wordle'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Wordle
+            </a>{' '}
+            app.
+          </p>
+        </>
+      ),
+    },
     reading: {
       title: 'Reading',
       description: (
@@ -65,7 +89,7 @@ function Hobbies() {
     },
   };
 
-  return <Tab title='Hobbies' tabs={hobbies} className='border-top'></Tab>;
+  return <Tab title='Hobbies' tabs={hobbies} className='border-top' />;
 }
 
 export default Hobbies;

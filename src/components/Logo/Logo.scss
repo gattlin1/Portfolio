@@ -1,13 +1,17 @@
 @import '../../variables.scss';
 
 .logo {
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+
   svg,
   img,
   i {
     opacity: 0.5;
     transition: ease-in all 0.4s;
     height: 100%;
-    width: auto;
+    width: 100%;
 
     &:hover {
       opacity: 1;
@@ -20,25 +24,12 @@
   }
 
   &.github-logo {
-    font-size: 80px;
     color: $github-black;
   }
 
   &.nihongo-logo {
     img {
       height: 80px;
-      width: 100%;
-    }
-  }
-
-  &.about-logo,
-  &.book-logo,
-  &.chess-logo {
-    font-size: 80px;
-    width: 100%;
-    text-align: center;
-
-    i {
       width: 100%;
     }
   }

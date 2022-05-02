@@ -3,6 +3,10 @@
 .tab {
   border-radius: 0 0 5px 5px;
 
+  .body {
+    width: 100%;
+  }
+
   .tab-content {
     display: flex;
     flex-direction: column;

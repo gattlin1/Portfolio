@@ -6,21 +6,25 @@ import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem';
 import './Header.scss';
 
 function Header() {
-  const [showOverlay, toggleOverlay] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
 
   const handleOverlayToggle = () => {
-    toggleOverlay(!showOverlay);
+    setShowOverlay(!showOverlay);
+  };
+
+  const closeOverlayToggle = () => {
+    setShowOverlay(false);
   };
 
   return (
     <header role='navigation' aria-label='Main'>
       <nav>
-        <div id='home' onClick={() => handleOverlayToggle()}>
+        <div id='home' onClick={() => closeOverlayToggle()}>
           <NavigationItem to=''>Gattlin Walker</NavigationItem>
         </div>
         <OverlayBtn show={showOverlay} clicked={handleOverlayToggle} />
       </nav>
-      <NavOverlay show={showOverlay} onClose={handleOverlayToggle} />
+      <NavOverlay show={showOverlay} onClose={closeOverlayToggle} />
     </header>
   );
 }
