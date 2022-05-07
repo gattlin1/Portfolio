@@ -11,17 +11,21 @@
     color: $gray;
     cursor: pointer;
 
-    i {
-      padding: 15px;
-      transition: all 0.3s ease;
+    .toggle {
+      padding: 15px 15px 15px 0px;
 
-      &.open {
-        transform: rotate(90deg);
+      i {
+        transition: all 0.2s ease;
+
+        &.open {
+          transform: rotate(90deg);
+        }
       }
     }
 
     h2 {
       flex-grow: 1;
+      text-align: initial;
     }
   }
 

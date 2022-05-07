@@ -33,7 +33,9 @@ function AccordianItem({
   return (
     <div id={id} className='accordian-item'>
       <div className='title' onClick={() => onToggleInfo()}>
-        <i className={toggleBtnClasses.join(' ')}></i>
+        <div className='toggle'>
+          <i className={toggleBtnClasses.join(' ')}></i>
+        </div>
         <h2>{title}</h2>
         <div>{date}</div>
       </div>
