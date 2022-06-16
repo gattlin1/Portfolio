@@ -160,7 +160,7 @@ function Education() {
             Bachelor of Science in Computer Science and Minor in Mathematics and
             Japanese
           </p>
-          <div className='description'>
+          <div className='description text-color-gray'>
             <p>
               I attended Missouri State University for a BS in Computer Science
               upon graduating high school. Some of my favorite classes were my

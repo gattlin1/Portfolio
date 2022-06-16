@@ -49,7 +49,7 @@ const Tab = ({ title, tabs, style, className }: TabProps) => {
         <div className='tab-list text-color-gray' role='tablist'>
           {tabIndices}
         </div>
-        <div className='tab-panel-container'>{tabPanels}</div>
+        <div className='tab-panel-container text-color-gray'>{tabPanels}</div>
       </div>
     </Card>
   );

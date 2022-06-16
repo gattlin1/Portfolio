@@ -8,7 +8,6 @@ export interface AccordianItemProps {
   content: JSX.Element[] | JSX.Element;
   initialState: boolean;
 }
-
 function AccordianItem({
   id,
   title,
@@ -23,7 +22,7 @@ function AccordianItem({
   };
 
   const toggleBtnClasses = ['fas', 'fa-chevron-right'];
-  const bodyClasses = ['body'];
+  const bodyClasses = ['body', 'text-color-gray'];
 
   if (showInfo) {
     bodyClasses.push('open');
