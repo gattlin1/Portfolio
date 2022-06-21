@@ -6,9 +6,9 @@ import Accordian from '../../UI/Accordian/Accordian';
 import './Research.scss';
 
 function Research() {
-  const location = useLocation();
+  const { hash } = useLocation();
   const nasaPaperOpenedOnLoad =
-    location.hash === '#CNN Approach for IR Spectral Classification';
+    hash === '#CNN Approach for IR Spectral Classification';
 
   const research = [
     {

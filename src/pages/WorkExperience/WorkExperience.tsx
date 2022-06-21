@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Tab from '../../components/UI/Tab/Tab';
+import Tab, { TabInfo } from '../../components/UI/Tab/Tab';
 import LearningReact from '../../components/Experience/Certificates/LearningReact/LearningReact';
 import SrAscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/SrAscSoftwareEng';
 import AscSoftwareEng from '../../components/Experience/DuckCreekTechnologies/AscSoftwareEng';
@@ -9,15 +9,20 @@ import PortfolioSite from '../../components/Experience/PersonalProjects/Portfoli
 import CapstoneProject from '../../components/Experience/School/CapstoneProject';
 import River from '../../components/Experience/PersonalProjects/River';
 import './WorkExperience.scss';
+import { useLocation } from 'react-router-dom';
 
 function WorkExperience() {
   useEffect(() => {
     document.title = 'Gattlin Walker | Experience';
   }, []);
+  const { hash } = useLocation();
 
-  const dctExperience: {
-    [tab: string]: { title: string; description: JSX.Element | JSX.Element[] };
-  } = {
+  let defaultActiveProject = null;
+  if (hash !== '') {
+    defaultActiveProject = hash.substring(1);
+  }
+
+  const dctExperience: TabInfo = {
     srAscSoftwareEng: {
       title: 'Sr. Asc. Software Engineer',
       description: <SrAscSoftwareEng />,
@@ -32,9 +37,7 @@ function WorkExperience() {
     },
   };
 
-  const projects: {
-    [tab: string]: { title: string; description: JSX.Element | JSX.Element[] };
-  } = {
+  const projects: TabInfo = {
     portfolioSite: {
       title: 'Portfolio Site',
       description: <PortfolioSite />,
@@ -43,8 +46,8 @@ function WorkExperience() {
       title: 'Learning React',
       description: <LearningReact />,
     },
-    capstoneProject: {
-      title: 'Microbeads v2',
+    mbv2: {
+      title: 'MBv2',
       description: <CapstoneProject />,
     },
     river: {
@@ -60,7 +63,12 @@ function WorkExperience() {
   return (
     <div className='experience'>
       <Tab title='Duck Creek Technologies' tabs={dctExperience}></Tab>
-      <Tab title='Projects' tabs={projects} className='border-top'></Tab>
+      <Tab
+        title='Projects'
+        tabs={projects}
+        defaultActiveTab={defaultActiveProject}
+        className='border-top'
+      ></Tab>
     </div>
   );
 }

@@ -2,17 +2,30 @@ import React, { useState } from 'react';
 import Card from '../Card/Card';
 import './Tab.scss';
 
-interface TabProps {
-  title: string;
-  tabs: {
-    [tab: string]: { title: string; description: JSX.Element | JSX.Element[] };
-  };
-  style?: {};
-  className?: string;
+export interface TabInfo {
+  [tab: string]: { title: string; description: JSX.Element | JSX.Element[] };
 }
 
-const Tab = ({ title, tabs, style, className }: TabProps) => {
-  const [currentTab, setCurrentTab] = useState(0);
+interface TabProps {
+  title: string;
+  tabs: TabInfo;
+  style?: {};
+  className?: string;
+  defaultActiveTab?: string | null;
+}
+
+const Tab = ({ title, tabs, style, className, defaultActiveTab }: TabProps) => {
+  let defaultActiveTabIndex = 0;
+  if (defaultActiveTab) {
+    Object.values(tabs).forEach(({ title: tabTitle }, i) => {
+      console.log(tabTitle);
+      if (tabTitle === defaultActiveTab) {
+        defaultActiveTabIndex = i;
+      }
+    });
+  }
+
+  const [currentTab, setCurrentTab] = useState(defaultActiveTabIndex);
   const tabClasses = ['tab'];
   if (className) tabClasses.push(...className.split(' '));
 
@@ -49,7 +62,9 @@ const Tab = ({ title, tabs, style, className }: TabProps) => {
         <div className='tab-list text-color-gray' role='tablist'>
           {tabIndices}
         </div>
-        <div className='tab-panel-container text-color-gray'>{tabPanels}</div>
+        <div id={title} className='tab-panel-container text-color-gray'>
+          {tabPanels}
+        </div>
       </div>
     </Card>
   );
