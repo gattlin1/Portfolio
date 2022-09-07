@@ -22,7 +22,7 @@ function SrAscSoftwareEng() {
     <Card media={<DuckCreekLogo />}>
       <>
         <p>
-          <strong>November 2021 - Present</strong>
+          <strong>November 2021 - September 2022</strong>
         </p>
         <div className='description text-color-gray'>
           <p>

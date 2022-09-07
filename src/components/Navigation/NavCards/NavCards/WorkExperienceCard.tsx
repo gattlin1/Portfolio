@@ -1,11 +1,11 @@
 import React from 'react';
 import CardLink from '../../../UI/Card/CardLink/CardLink';
 import Card from '../../../UI/Card/Card';
-import DuckCreekLogo from '../../../Logo/Logos/DuckCreekLogo';
+import SquareLogo from '../../../Logo/Logos/SquareLogo';
 
 function WorkExperienceCard() {
   return (
-    <Card title='Experience' media={<DuckCreekLogo />}>
+    <Card title='Experience' media={<SquareLogo />}>
       <>
         <p className='text-color-gray'>
           My experience in the industry and personal projects I have developed

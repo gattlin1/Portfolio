@@ -45,7 +45,7 @@ function About() {
             </div>
           </div>
           <div className='avatar'>
-            <img src='/images/avatar.png' alt='Me in a suit' />
+            <img src='/images/avatar.jpg' alt='Me' />
           </div>
         </div>
       </Card>

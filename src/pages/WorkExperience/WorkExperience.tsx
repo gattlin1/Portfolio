@@ -10,6 +10,7 @@ import CapstoneProject from '../../components/Experience/School/CapstoneProject'
 import River from '../../components/Experience/PersonalProjects/River';
 import './WorkExperience.scss';
 import { useLocation } from 'react-router-dom';
+import SoftwareEng from '../../components/Experience/Square/SoftwareEngineer';
 
 function WorkExperience() {
   useEffect(() => {
@@ -21,6 +22,10 @@ function WorkExperience() {
   if (hash !== '') {
     defaultActiveProject = hash.substring(1);
   }
+
+  const squareExperience: TabInfo = {
+    softwareEng: { title: 'Software Engineer', description: <SoftwareEng /> },
+  };
 
   const dctExperience: TabInfo = {
     srAscSoftwareEng: {
@@ -62,7 +67,12 @@ function WorkExperience() {
 
   return (
     <div className='experience'>
-      <Tab title='Duck Creek Technologies' tabs={dctExperience}></Tab>
+      <Tab title='Square' tabs={squareExperience}></Tab>
+      <Tab
+        title='Duck Creek Technologies'
+        tabs={dctExperience}
+        className='border-top'
+      ></Tab>
       <Tab
         title='Projects'
         tabs={projects}
