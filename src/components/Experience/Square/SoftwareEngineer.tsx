@@ -4,7 +4,15 @@ import Skill from '../../Skill/Skill';
 import SquareLogo from '../../Logo/Logos/SquareLogo';
 
 function SoftwareEng() {
-  const skills = ['AWS Step Functions', 'AWS Lambda', 'Git'];
+  const skills = [
+    'AWS Step Functions',
+    'AWS Lambda',
+    'Ruby on Rails',
+    'Terraform',
+    'Kochiku',
+    'Bash',
+    'Git',
+  ];
 
   return (
     <Card media={<SquareLogo />}>
@@ -14,14 +22,15 @@ function SoftwareEng() {
         </p>
         <div className='description text-color-gray'>
           <p>
-            Software Engineer for the Payroll development team. I work on
-            product the integration of external vendors to Square's products
+            Software Engineer for the Payroll Tax Automation and Tooling team.
+            We handle countless businesses that rely on us to file their taxes
           </p>
           <ul>
             <li>
               Implementing stories and bugs related to Square's Payroll product
             </li>
-            <li>Sprint planning</li>
+            <li>Integrating with external vendors</li>
+            <li>Automating tax filings</li>
             <li>
               Handling internal and external questions related to the team's
               products
