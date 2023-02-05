@@ -20,7 +20,6 @@ function Layout(props: LayoutProps) {
         <NavCards />
       </main>
       <ScrollToTop />
-      <Footer />
     </>
   );
 }
